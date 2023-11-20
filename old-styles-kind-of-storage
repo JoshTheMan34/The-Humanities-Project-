@@ -20,8 +20,8 @@ body {
 
 .nav-header-img {
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 87px;
+    height: 87px;
 }
 
 #navbarNav {
@@ -100,6 +100,13 @@ nav .navbar-toggler-icon:after{
     align-content: flex-end;
     align-items: flex-end;
 }
+.footer-social-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+}
 .footer-img {
     height: 100px;
     width: 100px;
@@ -118,6 +125,7 @@ nav .navbar-toggler-icon:after{
     font-weight: 700 !important;
     padding-bottom: 21px;
 }
+
 
 /* Making the more footer responsive*/
 @media (max-width: 768px) {
@@ -255,7 +263,7 @@ Code Copied from CodePen for Footer Start
     position: relative;
     margin: 0;
     padding: 0;
-    background-image: url(img/body-content-index-placeholder-barna-kovacs-HTs7o4cWWsY-unsplash.jpg);
+    background-image: url(img/second-body-content-index-placeholder-jackie-dilorenzo-RyLsRzy9jIA-unsplash.jpg);
     height: 50vh;
 
     background-attachment: fixed;
@@ -276,9 +284,10 @@ Code Copied from CodePen for Footer Start
     font-family: 'Playfair Display';
     font-size: 100px !important;
     font-weight: 700 !important;
+  }
 
     /* For Cursor Border typing animation Start */
-
+  .index-header h1 span {
     animation: blink .5s step-end infinite alternate;
     white-space: nonwrap;
     overflow: hidden;
@@ -322,6 +331,7 @@ Code Copied from CodePen for Footer Start
 .index-intro-subheader {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px !important;
+    color: #6EA587;
 }
 
 .index-intro-quote {

@@ -1,0 +1,261 @@
+/* Index Body Content Start */
+
+/* Home Page Figure and Figcaption */
+
+.txtover {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/second-body-content-index-placeholder-jackie-dilorenzo-RyLsRzy9jIA-unsplash.jpg);
+    height: 50vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .txtover figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .index-header h1 {
+    color: #e7e3e0;
+    font-family: 'Playfair Display';
+    font-size: 100px !important;
+    font-weight: 700 !important;
+  }
+
+    /* For Cursor Border typing animation Start */
+  .index-header h1 span {
+    animation: blink .5s step-end infinite alternate;
+    white-space: nonwrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    padding-right: 4px;
+
+    /* For Cursor Border typing animation End */
+
+  }
+
+/* Also For Cursor Border typing animation Start*/
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  @media (max-width: 768px) {
+	.index-header h1 { 
+        font-size: 50px !important; 
+    }
+}
+/* Also For Cursor Border typing animation End*/
+
+
+/* Home Page Figure and Figcaption */
+
+/* Index Intro Start */
+
+.index-intro {
+    margin-top: 70px;
+    margin-bottom: 140px;
+}
+
+.index-intro-header {
+    font-family: 'Playfair Display';
+    font-size: 50px !important;
+    font-weight: 700 !important;
+    text-align: left;
+}
+.index-intro-subheader {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px !important;
+    color: #6EA587;
+}
+
+.index-intro-quote {
+    text-align: right;
+}
+.index-intro-quote-title {
+    font-family: 'Playfair Display';
+    font-weight: 700 !important;
+}
+.index-intro-quote-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #777c77;
+}
+.index-intro-quote-text {
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+
+    .index-intro-desc {
+        margin-bottom: 40px !important;
+    }
+
+    .index-intro-subheader {
+        text-align: center;
+    }
+
+    .index-intro-quote {
+        margin-top: 30px !important;
+        text-align: center;
+    }
+
+
+}
+
+/* Index Intro End */
+
+
+/* Sponsors Slider Start */
+
+
+.sponsors-sliders {
+  align-items: center;
+  background: #f8f9fa;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+
+  /* added by us Start*/
+  margin-top: 70px;
+  margin-bottom: 70px;
+  /* added by us End */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 10));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+/* Sponsors Slider End */
+
+
+/* Index Theme Start */
+
+.index-theme {
+  margin-top: 140px;
+  margin-bottom: 70px;
+}
+
+.index-theme-title {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.index-theme-subheader {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28x;
+  color: #6EA587;
+}
+
+.index-theme-header {
+  font-family: 'Playfair Display';
+  font-weight: 700 !important;
+  font-size: 140px;
+}
+
+
+
+.index-theme-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.index-theme-emphasis {
+  color: #6EA587;
+  font-family: 'Playfair Display';
+  font-weight: bold;
+}
+
+/* Index Theme End */
+
+/* Index Theme Testimonials Start */
+
+.index-theme-testimonials {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.index-theme-testimonials-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  padding-bottom: 42px;
+}
+
+.index-theme-testimonials-title {
+  font-family: 'Playfair Display';
+  font-weight: 700 !important;
+}
+
+.index-theme-testimonials-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #777c77;
+}
+
+.index-theme-testimonials-text {
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+
+/* Index Theme Testimonials End */
+
+
+
+/* Index Body Content End */
