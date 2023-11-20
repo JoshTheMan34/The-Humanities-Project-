@@ -1,4 +1,17 @@
+
+
+/* Basic Body CSS for every page Start*/
+
+body {
+    background-color: #e7e3e0 !important;
+}
+
+/* Basic Body CSS for every page End*/
+
+
+
 /* Navbar Start */
+
 
 .nav-item {
     padding-left: 20px;
@@ -66,6 +79,8 @@ nav .navbar-toggler-icon:after{
 
 /* Navbar End */
 
+
+
 /* Footer Start */
 
 /* Footer Code made by us Start */
@@ -128,7 +143,7 @@ Code Copied from CodePen for Footer Start
 */
 
 .footer-bs {
-    background-color: #ffffff;
+    background-color: #e7e3e0;
 	padding: 60px 40px;
 	color: rgb(0, 0, 0);
 	margin-bottom: 20px;
@@ -229,3 +244,122 @@ Code Copied from CodePen for Footer Start
 
 
 /* Footer End */
+
+
+
+/* Index Body Content Start */
+
+/* Home Page Figure and Figcaption */
+
+.txtover {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/body-content-index-placeholder-barna-kovacs-HTs7o4cWWsY-unsplash.jpg);
+    height: 50vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .txtover figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .index-header h1 {
+    color: #e7e3e0;
+    font-family: 'Playfair Display';
+    font-size: 100px !important;
+    font-weight: 700 !important;
+
+    /* For Cursor Border typing animation Start */
+
+    animation: blink .5s step-end infinite alternate;
+    white-space: nonwrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    padding-right: 4px;
+
+    /* For Cursor Border typing animation End */
+
+  }
+
+/* Also For Cursor Border typing animation Start*/
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  @media (max-width: 768px) {
+	.index-header h1 { 
+        font-size: 50px !important; 
+    }
+}
+/* Also For Cursor Border typing animation End*/
+
+
+/* Home Page Figure and Figcaption */
+
+/* Index Intro Section Start */
+
+.index-intro {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.index-intro-header {
+    font-family: 'Playfair Display';
+    font-size: 50px !important;
+    font-weight: 700 !important;
+    text-align: left;
+}
+.index-intro-subheader {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px !important;
+}
+
+.index-intro-quote {
+    text-align: right;
+}
+.index-intro-quote-title {
+    font-family: 'Playfair Display';
+    font-weight: 700 !important;
+}
+.index-intro-quote-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.index-intro-quote-text {
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+
+    .index-intro-desc {
+        margin-bottom: 40px !important;
+    }
+
+    .index-intro-subheader {
+        text-align: center;
+    }
+
+    .index-intro-quote {
+        margin-top: 30px !important;
+        text-align: center;
+    }
+
+
+}
+
+/* Index Intro Section End */
+
+/* Index Body Content End */
