@@ -197,7 +197,7 @@
 
 .index-theme-subheader {
   font-family: 'Montserrat', sans-serif;
-  font-size: 28x;
+  font-size: 21px;
   color: #6EA587;
 }
 
@@ -220,6 +220,26 @@
   font-family: 'Playfair Display';
   font-weight: bold;
 }
+
+/* Making the Growth header responsive for phones Start*/
+
+@media (max-width: 768px) {
+
+  .index-theme-subheader {
+    font-size: 17px;
+  }
+
+	.index-theme-header {
+    font-size: 80px;
+  }
+
+  .index-theme-desc {
+    font-size: 17px;
+  }
+
+}
+
+/* Making the Growth header responsive for phones End*/
 
 /* Index Theme End */
 

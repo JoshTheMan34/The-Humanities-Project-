@@ -2,6 +2,7 @@
 
 body {
     background-color: #e7e3e0 !important;
+    overflow-x: hidden;
 }
 
 /* Basic Body CSS for every page End*/
