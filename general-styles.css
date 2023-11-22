@@ -33,6 +33,48 @@ nav a {
     font-weight: 700 !important;
 }
 
+/* Navbar Code copied from codepen: https://codepen.io/ig_design/pen/omQXoQ
+Start */
+
+.nav-link{
+    transition: all 200ms linear;
+}
+.nav-item:hover .nav-link{
+	color: #6EA587 !important;
+}
+.nav-item.active .nav-link{
+	color: #777 !important;
+}
+.nav-link {
+	position: relative;
+	display: inline-block;
+}
+.nav-item:after{
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	content: '';
+	background-color: #6EA587;
+	opacity: 0;
+    transition: all 200ms linear;
+}
+.nav-item:hover:after{
+	bottom: 0;
+	opacity: 1;
+}
+.nav-item.active:hover:after{
+	opacity: 0;
+}
+.nav-item{
+	position: relative;
+    transition: all 200ms linear;
+}
+
+/* Navbar Code copied from codepen: https://codepen.io/ig_design/pen/omQXoQ
+End */
+
 /* Navbar Toggler when Responsive Start */
 
 .navbar-toggler {
@@ -251,3 +293,56 @@ Code Copied from CodePen for Footer Start
 
 
 /* Footer End */
+
+/* Custom Page Cursor (copied from a codepen: https://codepen.io/ig_design/pen/OrLBqO
+Start */
+
+/* This is in an @media tag so that it only applies to desktop devices 
+and not mobile devices (it is based on screen width) 
+(see the "min-width" attribute for reference)*/
+
+@media screen and (min-width: 1025px) {
+    * {
+        cursor: none;
+    }
+    .cursor {
+        --size: 8px;
+        height: var(--size);
+        width:  var(--size);
+        border-radius: 50%;
+        position: absolute;
+        z-index: 10000;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+    .cursor.cursor-shadow {
+        background-color: transparent;
+        border: 1px solid #000000;
+        --size: 38px; /* Changes the size of the cursor border */
+        transition: top .2s, left .2s,
+                    width .2s, height .2s,
+                    background-color .2s, border-color 0.2s;
+        transition-timing-function: ease-out;
+    }
+    .cursor.cursor-dot {
+        background: #6EA587;
+        transition: width .2s, height .2s;
+    }
+    .cursor-shadow.active {
+        --size: 140px; /* Changes the size of the cursor when it is hovering an item with the "cursor-link" class */
+        border-color: rgb(255, 255, 255);
+        background-color: #6ea58744;
+    }
+    .cursor-dot.active {
+          --size: 0;
+    }
+    a {
+          cursor: none;
+    }
+    a:hover {
+          text-decoration: none;
+    }
+}
+
+/* Custom Page Cursor (copied from a codepen: https://codepen.io/ig_design/pen/OrLBqO
+End */

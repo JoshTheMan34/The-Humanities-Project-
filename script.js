@@ -1,3 +1,4 @@
+
     //Type Writer Effect Start //
 
     var span, textArr, textIndex, textToShow, textToShowLen, letterIndex, textTimer, letterTimer, textDelay, letterDelay, emptyTimer;
@@ -19,7 +20,7 @@
     textToShow = textArr[textIndex];
     textToShowLen = textToShow.length;
     letterIndex = 0;
-    
+
     letterTimer = setInterval(function() {
         span.textContent += textToShow[letterIndex];
         console.log(textToShow[letterIndex]);
@@ -29,7 +30,7 @@
         textTimer = setTimeout(nextText, textDelay)
         }
     } ,letterDelay)
-    
+
     }
 
     function nextText() {
@@ -59,4 +60,28 @@
 
     emptySpan();
 
-    // Type Writer Effect End //
+// Type Writer Effect End //
+
+
+    // Custom Page Cursor Start //
+    // Codepen link: https://codepen.io/ig_design/pen/OrLBqO //
+
+    $(window).mousemove(function(e) { 	  
+        $(".cursor").css({
+            left: e.pageX,
+            top: e.pageY
+        })	  
+    })
+    $(".cursor-link")
+    .on("mouseenter", function() {	 
+    $('.cursor').addClass("active")	  
+    })
+    .on("mouseleave", function() {	  
+    $('.cursor').removeClass("active")	  
+    })		
+
+    // Custom Page Cursor End //    
+    
+
+
+
