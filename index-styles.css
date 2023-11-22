@@ -191,13 +191,14 @@ Start */
 /* Sponsors Slider 
 End */
 
-
 /* Index Theme
  Start */
 
 .index-theme {
   margin-top: 140px;
   margin-bottom: 70px;
+  width: 100%;
+  height: 90vh;
 }
 
 .index-theme-title {
