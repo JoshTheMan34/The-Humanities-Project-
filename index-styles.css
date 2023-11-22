@@ -1,4 +1,5 @@
-/* Index Body Content Start */
+/* Index Body Content 
+Start */
 
 /* Home Page Figure and Figcaption */
 
@@ -29,19 +30,22 @@
     font-weight: 700 !important;
   }
 
-    /* For Cursor Border typing animation Start */
-  .index-header h1 span {
+    /* For Cursor Border typing animation 
+    Start */
+  .type_writer-effect {
     animation: blink .5s step-end infinite alternate;
     white-space: nonwrap;
     overflow: hidden;
     border-right: 3px solid;
     padding-right: 4px;
 
-    /* For Cursor Border typing animation End */
+    /* For Cursor Border typing animation 
+    End */
 
   }
 
-/* Also For Cursor Border typing animation Start*/
+/* Also For Cursor Border typing animation 
+Start*/
   @keyframes blink {
     50% {
       border-color: transparent
@@ -53,12 +57,14 @@
         font-size: 50px !important; 
     }
 }
-/* Also For Cursor Border typing animation End*/
+/* Also For Cursor Border typing animation 
+End*/
 
 
 /* Home Page Figure and Figcaption */
 
-/* Index Intro Start */
+/* Index Intro 
+Start */
 
 .index-intro {
     margin-top: 70px;
@@ -114,10 +120,12 @@
 
 }
 
-/* Index Intro End */
+/* Index Intro 
+End */
 
 
-/* Sponsors Slider Start */
+/* Sponsors Slider 
+Start */
 
 
 .sponsors-sliders {
@@ -127,10 +135,12 @@
   height: 100vh;
   justify-content: center;
 
-  /* added by us Start*/
+  /* added by us 
+  Start*/
   margin-top: 70px;
   margin-bottom: 70px;
-  /* added by us End */
+  /* added by us 
+  End */
 }
 
 @keyframes scroll {
@@ -148,7 +158,6 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 100vw;
 
 }
 .slider::before, .slider::after {
@@ -179,10 +188,12 @@
   width: 250px;
 }
 
-/* Sponsors Slider End */
+/* Sponsors Slider 
+End */
 
 
-/* Index Theme Start */
+/* Index Theme
+ Start */
 
 .index-theme {
   margin-top: 140px;
@@ -207,21 +218,14 @@
   font-size: 140px;
 }
 
-
-
-.index-theme-desc {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-}
-
 .index-theme-emphasis {
   color: #6EA587;
   font-family: 'Playfair Display';
   font-weight: bold;
 }
 
-/* Making the Growth header responsive for phones Start*/
+/* Making the Growth header responsive for phones 
+Start*/
 
 @media (max-width: 768px) {
 
@@ -239,11 +243,14 @@
 
 }
 
-/* Making the Growth header responsive for phones End*/
+/* Making the Growth header responsive for phones 
+End*/
 
-/* Index Theme End */
+/* Index Theme 
+End */
 
-/* Index Theme Testimonials Start */
+/* Index Theme Testimonials 
+Start */
 
 .index-theme-testimonials {
   margin-top: 70px;
@@ -259,6 +266,7 @@
 .index-theme-testimonials-title {
   font-family: 'Playfair Display';
   font-weight: 700 !important;
+  font-size: 32px;
 }
 
 .index-theme-testimonials-subtitle {
@@ -268,14 +276,184 @@
 }
 
 .index-theme-testimonials-text {
+  border-top: 1px dashed #6EA587;
+  padding-top: 14px;
   font-style: italic;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
 
 
-/* Index Theme Testimonials End */
+/* Index Theme Testimonials 
+End */
+
+
+/* Index Previous Issue 
+Start*/
+
+.index-previous-issue {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: #dad3d0;
+}
+
+.index-previous-issue-title-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.index-previous-issue-header {
+  font-family: 'Playfair Display';
+  font-weight: 700 !important;
+  font-size: 80px;
+}
+
+.index-previous-issue-desc-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: c;
+}
+
+.index-previous-issue-subheader {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.index-previous-issue-link {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 21px;
+  font-size: 16px;
+}
+
+.index-previous-issue-link a{
+  text-decoration: underline wavy #6EA587 2px !important;
+  text-underline-offset: 7px;
+  color: inherit;
+}
+
+/* Makes the underline color change on hover
+Start */
+.index-previous-issue-link a:hover {
+  text-decoration: underline wavy black 2px !important;
+  
+}
+
+/* Makes the underline color change on hover
+End */
+
+.index-snippets-text {
+  border-top: 1px dashed #6EA587;
+  padding-top: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+
+/* Index Previous Issue
+End*/
+
+/* Index Snippets 
+Start*/
+
+.index-snippets {
+  margin-top: 70px !important;
+  margin-bottom: 70px !important;
+}
+
+
+.index-snippets-overall-heading {
+  display: flex;
+  flex-flow: column wrap;
+  place-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.index-snippets-header {
+  font-style: italic;
+  font-family: 'Playfair Display';
+  font-weight: 800 !important;
+  font-size: 140px;
+  padding-bottom: 21px;
+
+}
+
+.index-snippets-overall-piece {
+  display: flex;
+  flex-flow: column wrap;
+  place-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+.index-snippets-single-piece {
+  margin-bottom: 32px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+}
+
+.index-snippets-title {
+  font-family: 'Playfair Display';
+  font-weight: 700 !important;
+  font-size: 32px;
+}
+
+.index-snippets-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #777c77;
+}
+
+.index-snippets-read-more {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 21px;
+  font-size: 16px;
+}
+
+.index-snippets-read-more a{
+  text-decoration: underline wavy #6EA587 2px !important;
+  text-underline-offset: 7px;
+  color: inherit;
+}
+
+/* Makes the underline color change on hover
+Start */
+.index-snippets-read-more a:hover {
+  text-decoration: underline wavy black 2px !important;
+  
+}
+
+/* Makes the underline color change on hover
+End */
+
+.index-snippets-text-section {
+  padding-top: 21px;
+}
+
+.index-snippets-text {
+  border-top: 1px dashed #6EA587;
+  padding-top: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+
+/* Index Snippets 
+End*/
 
 
 
-/* Index Body Content End */
+
+/* Index Body Content 
+End */

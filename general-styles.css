@@ -1,15 +1,26 @@
-/* Basic Body CSS for every page Start*/
+/* Basic Body CSS for every page 
+Start*/
 
 body {
     background-color: #e7e3e0 !important;
     overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
-/* Basic Body CSS for every page End*/
+a {
+    transition: all 140ms linear
+}
+
+/* Basic Body CSS for every page 
+End*/
 
 
 
-/* Navbar Start */
+/* Navbar 
+Start */
 
 
 .nav-item {
@@ -75,7 +86,8 @@ Start */
 /* Navbar Code copied from codepen: https://codepen.io/ig_design/pen/omQXoQ
 End */
 
-/* Navbar Toggler when Responsive Start */
+/* Navbar Toggler when Responsive 
+Start */
 
 .navbar-toggler {
 	float: right;
@@ -116,15 +128,19 @@ nav .navbar-toggler-icon:after{
 	border-color: transparent;
 }
 
-/* Navbar Toggler when Responsive End */
+/* Navbar Toggler when Responsive 
+End */
 
-/* Navbar End */
+/* Navbar 
+End */
 
 
 
-/* Footer Start */
+/* Footer 
+Start */
 
-/* Footer Code made by us Start */
+/* Footer Code made by us 
+Start */
 .footer-nav {
     display: flex;
     flex-wrap: wrap;
@@ -183,11 +199,13 @@ nav .navbar-toggler-icon:after{
     }
 }
 
-/* Footer Code made by us End */
+/* Footer Code made by us 
+End */
 
 
 /* 
-Code Copied from CodePen for Footer Start 
+Code Copied from CodePen for Footer 
+Start 
 (we edited some of this however)
 */
 
@@ -289,10 +307,12 @@ Code Copied from CodePen for Footer Start
     }
 }
 
-/* Code Copied from CodePen for Footer End */
+/* Code Copied from CodePen for Footer 
+End */
 
 
-/* Footer End */
+/* Footer 
+End */
 
 /* Custom Page Cursor (copied from a codepen: https://codepen.io/ig_design/pen/OrLBqO
 Start */
@@ -346,3 +366,31 @@ and not mobile devices (it is based on screen width)
 
 /* Custom Page Cursor (copied from a codepen: https://codepen.io/ig_design/pen/OrLBqO
 End */
+
+
+/* Cool underline animation
+Start*/
+
+.underline-animation {
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.underline-animation::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #6EA587;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}

@@ -1,5 +1,6 @@
 
-    //Type Writer Effect Start //
+    // Type Writer Effect //
+    // Start //
 
     var span, textArr, textIndex, textToShow, textToShowLen, letterIndex, textTimer, letterTimer, textDelay, letterDelay, emptyTimer;
 
@@ -59,11 +60,13 @@
     }
 
     emptySpan();
+    
+// Type Writer Effect //
+// End //
 
-// Type Writer Effect End //
 
-
-    // Custom Page Cursor Start //
+    // Custom Page Cursor //
+    // Start //
     // Codepen link: https://codepen.io/ig_design/pen/OrLBqO //
 
     $(window).mousemove(function(e) { 	  
@@ -80,7 +83,8 @@
     $('.cursor').removeClass("active")	  
     })		
 
-    // Custom Page Cursor End //    
+    // Custom Page Cursor //
+    // End //    
     
 
 
