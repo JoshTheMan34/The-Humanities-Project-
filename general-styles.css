@@ -1,7 +1,7 @@
 /* Basic Body CSS for every page 
 Start*/
 
-body {
+html, body {
     background-color: #e7e3e0 !important;
     overflow-x: hidden;
     width: 100%;
