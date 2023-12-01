@@ -1,9 +1,24 @@
+/* Custom Variables
+Start*/
+:root {
+    --main-background-color: #FFFDF7;
+    --font-color: #1D1B1A;
+    --dark-green-accent: #417058;
+    --dark-green-accent-translucent: #41705877;
+    --light-green-accent: #87CDA1;
+    --yellow-accent: #FDD57E;
+    --pink-accent: #FFBCDF;
+  
+  }
+  /* Custom Variables
+  End*/
 
 /* Basic Body CSS for every page 
 Start*/
 
 html, body {
-    background-color: #e7e3e0 !important;
+    background-color: var(--main-background-color) !important;
+    color: var(--font-color) !important;
     overflow-x: hidden;
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -52,7 +67,7 @@ Start */
     transition: all 200ms linear;
 }
 .nav-item:hover .nav-link{
-	color: #6EA587 !important;
+	color: var(--dark-green-accent) !important;
 }
 .nav-item.active .nav-link{
 	color: #777 !important;
@@ -68,7 +83,7 @@ Start */
 	width: 100%;
 	height: 2px;
 	content: '';
-	background-color: #6EA587;
+	background-color: var(--dark-green-accent);
 	opacity: 0;
     transition: all 200ms linear;
 }
@@ -211,7 +226,7 @@ Start
 */
 
 .footer-bs {
-    background-color: #e7e3e0;
+    background-color: var(--main-background-color);
 	padding: 60px 40px;
 	color: rgb(0, 0, 0);
 	margin-bottom: 20px;
@@ -304,7 +319,7 @@ Start
 
 @media (min-width: 768px) {
 	.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { 
-        border-left:solid 1px rgba(255,255,255,0.10); 
+        border-left:solid 1px #87cda100; 
     }
 }
 
@@ -346,13 +361,13 @@ and not mobile devices (it is based on screen width)
         transition-timing-function: ease-out;
     }
     .cursor.cursor-dot {
-        background: #6EA587;
+        background: var(--light-green-accent);
         transition: width .2s, height .2s;
     }
     .cursor-shadow.active {
         --size: 140px; /* Changes the size of the cursor when it is hovering an item with the "cursor-link" class */
         border-color: rgb(255, 255, 255);
-        background-color: #6ea58744;
+        background-color: var(--dark-green-accent-translucent);
     }
     .cursor-dot.active {
           --size: 0;
@@ -385,7 +400,7 @@ Start*/
     left: 0;
     width: 100%;
     height: 3px;
-    background: #6EA587;
+    background: var(--light-green-accent);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s;

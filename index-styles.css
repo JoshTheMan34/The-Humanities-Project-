@@ -4,6 +4,22 @@ Start*/
 /* Font for the Post-it Notes
 End*/
 
+
+/* Custom Variables
+Start*/
+:root {
+  --main-background-color: #FFFDF7;
+  --test-background-color-previous-issue: #dad3d0;
+  --font-color: #1D1B1A;
+  --dark-green-accent: #417058;
+  --light-green-accent: #87CDA1;
+  --yellow-accent: #FDD57E;
+  --pink-accent: #FFBCDF;
+
+}
+/* Custom Variables
+End*/
+
 /* Index Body Content 
 Start */
 
@@ -30,7 +46,7 @@ Start */
   }
 
   .index-header h1 {
-    color: #e7e3e0;
+    color: var(--main-background-color);
     font-family: 'Playfair Display';
     font-size: 100px !important;
     font-weight: 700 !important;
@@ -86,7 +102,7 @@ Start */
 .index-intro-subheader {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px !important;
-    color: #6EA587;
+    color: var(--light-green-accent);
 }
 
 .index-intro-quote {
@@ -221,7 +237,7 @@ End */
 .index-theme-subheader {
   font-family: 'Montserrat', sans-serif;
   font-size: 21px;
-  color: #6EA587;
+  color: var(--light-green-accent);
 }
 
 .index-theme-header {
@@ -231,7 +247,7 @@ End */
 }
 
 .index-theme-emphasis {
-  color: #6EA587;
+  color: var(--light-green-accent);
   font-family: 'Playfair Display';
   font-weight: bold;
 }
@@ -288,7 +304,7 @@ Start */
 }
 
 .index-theme-testimonials-text {
-  border-top: 1px dashed #6EA587;
+  border-top: 1px dashed var(--light-green-accent);
   padding-top: 14px;
   font-style: italic;
   font-family: 'Montserrat', sans-serif;
@@ -303,7 +319,7 @@ Start
 .sticky {
   -webkit-box-shadow: #DDD 0px 1px 2px;
   position: relative;
-  background-color: #F4F39E;
+  background-color: var(--pink-accent);
   border-color: #DEE184;
   color: #47576B;
   text-align: center;
@@ -350,7 +366,7 @@ Start
 .note { 
 -webkit-box-shadow: #DDD 0px 1px 2px;
   position: relative;
-  background-color: #F4F39E;
+  background-color: var(--pink-accent);
   border-color: #DEE184;
   color: #47576B;
   text-align: center;
@@ -452,7 +468,7 @@ Start*/
 }
 
 .index-previous-issue-link a{
-  text-decoration: underline wavy #6EA587 2px !important;
+  text-decoration: underline wavy var(--light-green-accent) 2px !important;
   text-underline-offset: 7px;
   color: inherit;
 }
@@ -468,7 +484,7 @@ Start */
 End */
 
 .index-snippets-text {
-  border-top: 1px dashed #6EA587;
+  border-top: 1px dashed var(--light-green-accent);
   padding-top: 14px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -541,7 +557,7 @@ Start*/
 }
 
 .index-snippets-read-more a{
-  text-decoration: underline wavy #6EA587 2px !important;
+  text-decoration: underline wavy var(--light-green-accent) 2px !important;
   text-underline-offset: 7px;
   color: inherit;
 }
@@ -561,7 +577,7 @@ End */
 }
 
 .index-snippets-text {
-  border-top: 1px dashed #6EA587;
+  border-top: 1px dashed var(--light-green-accent);
   padding-top: 14px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
