@@ -10,6 +10,7 @@ Start*/
 :root {
   --main-background-color: #FFFDF7;
   --test-background-color-previous-issue: #dad3d0;
+  --old-background-color: #e7e3e0;
   --font-color: #1D1B1A;
   --dark-green-accent: #417058;
   --light-green-accent: #87CDA1;
@@ -429,7 +430,7 @@ Start*/
 .index-previous-issue {
   padding-top: 5vh;
   padding-bottom: 5vh;
-  background-color: #dad3d0;
+  background-color: #e7e3e0;
 }
 
 .index-previous-issue-title-column {
