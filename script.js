@@ -238,6 +238,18 @@ function randNum(min, max) {
 // Copied from Codepen: https://codepen.io/internette/pen/OWQOWa //
 // End //
 
+// About button //
+// Start //
+const mainButton = document.getElementById("about__button");
+
+mainButton.addEventListener("click", function(event){
+    this.remove();
+    document.querySelector('main').classList.remove('hidden')
+});
+// Sourced from "https://stackoverflow.com/questions/70700266/how-can-i-show-page-elements-by-clicking-on-button#:~:text=First%2C%20add%20the%20display%3A%20none%20style%20to%20all,the%20button%20and%20reveals%20all%20previously%20hidden%20elements."//
+// About Button //
+// End //
+
 // Growing Vines //
 // Start //
 
