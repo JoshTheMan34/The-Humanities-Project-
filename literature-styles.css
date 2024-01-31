@@ -1,0 +1,111 @@
+/* Fonts Start */
+@font-face {
+    font-family: 'Deckard-Regular Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('DeckardRegular_1_.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Deckard Medium Evan';
+    font-style: normal;
+    font-weight: normal;
+    src: url('DeckardMedium.woff') format('woff');
+    }
+/* Fonts End*/
+/* Home Page Figure and Figcaption */
+
+.txtover {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/photo-1483354483454-4cd359948304.avif);
+    height: 65vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .txtover figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .literature-header h1 {
+    color: var(--main-background-color);
+    font-family: 'Playfair Display';
+    font-size: 100px !important;
+    font-weight: 700 !important;
+    letter-spacing: 7px;
+  }
+
+/* Home Page Figure and Figcaption */
+
+/* Index Intro 
+Start */
+
+.literature-intro {
+    margin-top: 70px;
+    margin-bottom: 140px;
+}
+
+.literature-intro-showing {
+    font-family: 'Deckard-Regular Regular';
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+}
+.literature-intro-filter {
+    font-family: 'Playfair Display';
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    display: flex;
+    justify-content: center;
+}
+
+.literature-intro-quote {
+    text-align: right;
+}
+.literature-intro-quote-title {
+    font-family: 'Playfair Display';
+    font-weight: 700 !important;
+}
+.literature-intro-quote-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #777c77;
+}
+.literature-intro-quote-text {
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+
+    .literature-intro-desc {
+        margin-bottom: 40px !important;
+    }
+
+    .literature-intro-subheader {
+        text-align: center;
+    }
+
+    .literature-intro-quote {
+        margin-top: 30px !important;
+        text-align: center;
+    }
+
+
+}
+
+/* Index Intro 
+End */
