@@ -19,7 +19,12 @@ Start*/
 
 
 
-/* Custom Scroll Bar Start */
+/* Custom Scroll Bar Start
+Code and help from both
+https://ishadeed.com/article/custom-scrollbars-css/
+and
+https://www.youtube.com/watch?v=lvKK2fs6h4I
+*/
 ::-webkit-scrollbar {
     width: 20px;
   }
@@ -46,7 +51,12 @@ Start*/
         scrollbar-width: thin;
     }
   }
-/* Custom Scroll Bar End */
+/* Custom Scroll Bar End
+Code and help from both
+https://ishadeed.com/article/custom-scrollbars-css/
+and
+https://www.youtube.com/watch?v=lvKK2fs6h4I
+*/
 
 /* Basic Body CSS for every page 
 Start*/
