@@ -1,3 +1,20 @@
+/* Custom Variables
+Start*/
+:root {
+    --main-background-color: #FFFDF7;
+    --test-background-color-previous-issue: #dad3d0;
+    --old-background-color: #e7e3e0;
+    --alternate-background-color: #e7e3e0;
+    --font-color: #1D1B1A;
+    --dark-green-accent: #417058;
+    --light-green-accent: #87CDA1;
+    --yellow-accent: #FDD57E;
+    --pink-accent: #FFBCDF;
+  
+  }
+  /* Custom Variables
+  End*/
+
 /* Fonts Start */
 @font-face {
     font-family: 'Deckard-Regular Regular';
@@ -44,62 +61,227 @@
     letter-spacing: 7px;
   }
 
+  @media (max-width: 768px) {
+    .literature-header h1 { 
+          font-size: 50px !important; 
+      }
+  }
 /* Home Page Figure and Figcaption */
 
-/* Index Intro 
-Start */
+/* Literature 
+Intro 
+Start 
+*/
 
 .literature-intro {
     margin-top: 70px;
-    margin-bottom: 140px;
+    margin-bottom: 70px;
+    padding-top: 28px;
 }
 
 .literature-intro-showing {
-    font-family: 'Deckard-Regular Regular';
+    font-family: 'Deckard Medium Evan';
     font-size: 16px !important;
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     text-align: left;
     display: flex;
     justify-content: left;
 }
-.literature-intro-filter {
-    font-family: 'Playfair Display';
+
+/* 
+Scroll Down Arrow 
+Start
+From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
+*/
+.literature-intro-scroll-down {
+    font-family: 'Deckard Medium Evan';
     font-size: 16px !important;
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     display: flex;
     justify-content: center;
 }
 
-.literature-intro-quote {
-    text-align: right;
+#mouse-scroll {
+    display: block;
+  }
+  #mouse-scroll {
+    margin: auto;
+    left: 50%;
+    top: 70px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 9999;
+  }
+  #mouse-scroll span{
+    display: block;
+    width: 5px; 
+    height: 5px;
+    -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+         transform: rotate(45deg);
+         transform: rotate(45deg);
+    border-right: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 0 0 3px 5px;
+  }
+  #mouse-scroll .mouse {
+    height: 21px;
+    width: 14px;
+    border-radius: 10px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    border: 2px solid black;
+    top: 170px;
+  }
+  #mouse-scroll .down-arrow-1 {
+    margin-top: 6px;
+  }
+  #mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
+    -webkit-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+      -moz-animation: mouse-scroll 1s infinite;
+  }
+  #mouse-croll .down-arrow-1 {
+     -webkit-animation-delay: .1s;
+     animation-delay: .1s;
+     -moz-animation-delay: .1s;
+     -webkit-animation-direction: alternate;
+     animation-direction: alternate;
+  }
+  #mouse-scroll .down-arrow-2 {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s; 
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+  #mouse-scroll .down-arrow-3 {
+     -webkit-animation-delay: .3s;
+     animation-delay: .3s; 
+     -moz-animation-dekay: .3s;
+     -webkit-animation-direction: alternate;
+     animation-direction: alternate;
+  }
+  #mouse-scroll .mouse-in {
+    height: 5px;
+    width: 2px;
+    display: block; 
+    margin: 5px auto;
+    background: black;
+    position: relative;
+  }
+  #mouse-scroll .mouse-in {
+   -webkit-animation: animated-mouse 1.2s ease infinite;
+   animation: animated-mouse 1.2s ease infinite;
+    -moz-animation: mouse-animated 1.2s ease infinite;
+  }
+  
+  @-webkit-keyframes animated-mouse {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+       opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  @keyframes animated-mouse {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+      }
+  }
+  @-webkit-keyframes mouse-scroll {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    } 
+  }
+  @keyframes mouse-scroll {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+/* 
+Scroll Down Arrow 
+End
+From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
+*/
+
+/*
+Literature Intro Layout
+Start
+*/
+.literature-intro-layout {
+    font-family: 'Deckard Medium Evan';
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    display: flex;
+    justify-content: right;
 }
-.literature-intro-quote-title {
-    font-family: 'Playfair Display';
-    font-weight: 700 !important;
+
+/* 
+Layout Items 
+Start 
+*/
+.layout-item {
+    padding-left: 32px;
 }
-.literature-intro-quote-subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: #777c77;
+
+.layout-link {
+    text-decoration: none;
+    color: black;
 }
-.literature-intro-quote-text {
-    font-style: italic;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+.layout-link.active {
+    border-bottom: 1px solid;
 }
+/* 
+Layout Items 
+End 
+*/
+
+/* 
+Literature Intro Layout 
+End
+*/
 
 
 @media (max-width: 768px) {
 
-    .literature-intro-desc {
+    .literature-intro-showing {
         margin-bottom: 40px !important;
     }
 
-    .literature-intro-subheader {
+    .literature-intro-scroll-down {
         text-align: center;
     }
 
-    .literature-intro-quote {
+    .literature-intro-layout {
         margin-top: 30px !important;
         text-align: center;
     }
@@ -107,5 +289,76 @@ Start */
 
 }
 
-/* Index Intro 
-End */
+/* 
+Literature Intro 
+End 
+*/
+
+/*
+Literature Works
+Start
+*/
+
+.literature-works {
+    padding-right:calc(var(--bs-gutter-x) * 2) !important;
+    padding-left:calc(var(--bs-gutter-x) * 2) !important;
+}
+.literature-works-pieces {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.literature-works-pieces-card {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+
+    background-color: #e6e0dc;
+
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.literature-works-pieces-card h3{
+    font-family: 'Playfair Display';
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    margin-top: 5%;
+
+}
+
+.literature-works-pieces-card-image {
+    width: 58%;
+    margin: 30px auto;
+}
+
+.position {
+    padding-bottom: 140%;
+    position: relative;
+    height: 0;
+}
+.position img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.literature-works-pieces-card p{
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    font-weight: 500 !important;
+    margin-top: 5%;
+
+}
+
+/*
+Literature Works
+End
+*/
