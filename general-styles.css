@@ -7,7 +7,7 @@ Start*/
     --alternate-background-color: #e7e3e0;
     --font-color: #1D1B1A;
     --dark-green-accent: #417058;
-    --dark-green-accent-translucent: #4170587c;
+    --dark-green-accent-translucent: #4170588c;
     --light-green-accent: #87CDA1;
     --light-green-accent-translucent: #87cda177;
     --yellow-accent: #FDD57E;
@@ -38,16 +38,16 @@ https://www.youtube.com/watch?v=lvKK2fs6h4I
     border-radius: 100px;
     border: 6.1px solid transparent;
     background-clip: content-box;
-    background-color: #4170588c;
+    background-color: var(--dark-green-accent-translucent);
   }
 
   ::-webkit-scrollbar-thumb:hover {
     cursor: default !important;
   }
 
-  @supports(scrollbar-color: (#4170588c var(--main-background-color))) {
+  @supports(scrollbar-color: (var(--dark-green-accent-translucent) var(--main-background-color))) {
     * {
-        scrollbar-color: #4170588c var(--main-background-color);
+        scrollbar-color: var(--dark-green-accent-translucent) var(--main-background-color);
         scrollbar-width: thin;
     }
   }
