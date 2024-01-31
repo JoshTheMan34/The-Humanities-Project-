@@ -9,12 +9,44 @@ Start*/
     --dark-green-accent: #417058;
     --dark-green-accent-translucent: #4170587c;
     --light-green-accent: #87CDA1;
+    --light-green-accent-translucent: #87cda177;
     --yellow-accent: #FDD57E;
     --pink-accent: #FFBCDF;
   
   }
   /* Custom Variables
   End*/
+
+
+
+/* Custom Scroll Bar Start */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--main-background-color);
+    border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 6.1px solid transparent;
+    background-clip: content-box;
+    background-color: var(--light-green-accent);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: default !important;
+  }
+
+  @supports(scrollbar-color: (var(--light-green-accent) var(--main-background-color))) {
+    * {
+        scrollbar-color: var(--light-green-accent) var(--main-background-color);
+        scrollbar-width: thin;
+    }
+  }
+/* Custom Scroll Bar End */
 
 /* Basic Body CSS for every page 
 Start*/
@@ -29,6 +61,10 @@ html, body {
             box-sizing: border-box;
 }
 
+body {
+    overflow-y: auto;
+    direction: ltr;
+}
 a {
     transition: all 140ms linear
 }
@@ -371,7 +407,7 @@ and not mobile devices (it is based on screen width)
     .cursor-shadow.active {
         --size: 140px; /* Changes the size of the cursor when it is hovering an item with the "cursor-link" class */
         border-color: rgb(255, 255, 255);
-        background-color: var(--dark-green-accent-translucent);
+        background-color: var(--light-green-accent-translucent);
     }
     .cursor-dot.active {
           --size: 0;

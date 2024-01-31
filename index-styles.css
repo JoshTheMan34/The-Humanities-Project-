@@ -461,12 +461,21 @@ Start*/
 .index-previous-issue-subheader {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
 }
 
 .index-previous-issue-link {
   font-family: 'Montserrat', sans-serif;
   padding-top: 21px;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.index-previous-issue-emphasis {
+  color: var(--dark-green-accent);
+  font-weight: bold;
 }
 
 .index-previous-issue-link a{
