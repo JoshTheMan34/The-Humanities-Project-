@@ -371,7 +371,7 @@ and not mobile devices (it is based on screen width)
     .cursor-shadow.active {
         --size: 140px; /* Changes the size of the cursor when it is hovering an item with the "cursor-link" class */
         border-color: rgb(255, 255, 255);
-        background-color: var(--dark-green-accent);
+        background-color: var(--dark-green-accent-translucent);
     }
     .cursor-dot.active {
           --size: 0;
