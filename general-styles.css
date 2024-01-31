@@ -38,16 +38,16 @@ https://www.youtube.com/watch?v=lvKK2fs6h4I
     border-radius: 100px;
     border: 6.1px solid transparent;
     background-clip: content-box;
-    background-color: var(--light-green-accent);
+    background-color: #4170588c;
   }
 
   ::-webkit-scrollbar-thumb:hover {
     cursor: default !important;
   }
 
-  @supports(scrollbar-color: (var(--light-green-accent) var(--main-background-color))) {
+  @supports(scrollbar-color: (#4170588c var(--main-background-color))) {
     * {
-        scrollbar-color: var(--light-green-accent) var(--main-background-color);
+        scrollbar-color: #4170588c var(--main-background-color);
         scrollbar-width: thin;
     }
   }
