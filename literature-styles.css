@@ -300,10 +300,10 @@ Start
 Inspired by https://www.brinkerhoffpoetry.org/poems
 */
 
-.literature-works {
-    padding-right:calc(var(--bs-gutter-x) * 2) !important;
-    padding-left:calc(var(--bs-gutter-x) * 2) !important;
+.literature-works .row {
+  padding-top: 70px;
 }
+
 .literature-works-pieces {
     padding-left: 35px;
     padding-right: 35px;
@@ -327,7 +327,7 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
 
 .literature-works-pieces-card h3{
     font-family: 'Playfair Display';
-    font-size: 28px !important;
+    font-size: 24px !important;
     font-weight: 500 !important;
     margin-top: 5%;
 
