@@ -318,6 +318,8 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
 
     background-color: #e6e0dc;
 
+    border-radius: 14px;
+    
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
