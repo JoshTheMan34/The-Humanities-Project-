@@ -1,4 +1,6 @@
 // Search Bar //
+// Made with ChatGPT //
+// God blessed us with getting it to work //
 // Start //
 
 function search() {
@@ -52,7 +54,7 @@ function scrollToAndHighlight(textNodes, searchTerm) {
 
         // Create a new span element to wrap the matching words
         var highlightedText = document.createElement('span');
-        highlightedText.style.backgroundColor = '#ffff99'; // Customize the highlight color
+        highlightedText.style.backgroundColor = '#FFBCDF'; // Customize the highlight color
 
         // Iterate through words and apply the highlight to matching words
         for (var j = 0; j < words.length; j++) {
@@ -60,7 +62,7 @@ function scrollToAndHighlight(textNodes, searchTerm) {
             wordSpan.textContent = words[j];
 
             if (words[j].toLowerCase() === searchTerm) {
-                wordSpan.style.backgroundColor = '#ffff99'; // Customize the highlight color
+                wordSpan.style.backgroundColor = '#FFBCDF'; // Customize the highlight color
             }
 
             highlightedText.appendChild(wordSpan);
@@ -139,4 +141,6 @@ function handleFormSubmit(event) {
 document.getElementById('searchForm').addEventListener('submit', handleFormSubmit);
 
 // Search Bar //
+// Made with ChatGPT //
+// God blessed us with getting it to work //
 // End //
