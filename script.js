@@ -100,9 +100,13 @@ mainButton.addEventListener("click", function(event){
 // About Button //
 // End //
 
-// Growing Vines //
+// Lazy Loading using lozad.js //
+// Source: https://github.com/ApoorvSaxena/lozad.js?tab=readme-ov-file#usage //
 // Start //
 
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
 
-// Growing Vines //
+// Lazy Loading using lozad.js //
+// Source: https://github.com/ApoorvSaxena/lozad.js?tab=readme-ov-file#usage //
 // End //
