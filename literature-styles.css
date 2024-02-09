@@ -86,6 +86,7 @@ Start
     text-align: left;
     display: flex;
     justify-content: left;
+    align-items: center;
 }
 
 /*
@@ -192,6 +193,7 @@ From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
     font-weight: 500 !important;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #mouse-scroll {
@@ -336,6 +338,7 @@ Start
     font-weight: 500 !important;
     display: flex;
     justify-content: right;
+    align-items: center;
 }
 
 /* 
