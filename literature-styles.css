@@ -489,6 +489,10 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
   top: 0;
   left: 0;
   background: #dcd6d2;
+  /*
+  background-image: url("img/test-photos/photo-1524401597352-ec4463663233.jpg");
+  background-size: cover;
+  */
   height: 100%;
   width: 60px;
   
