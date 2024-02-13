@@ -1,0 +1,18 @@
+#imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px; /* Adjust the max width as needed */
+    margin: 20px auto;
+}
+
+.image {
+    width: 23%; /* 4 images in a row with a small gap */
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
