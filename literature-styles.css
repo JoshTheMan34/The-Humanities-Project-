@@ -519,3 +519,87 @@ Literature Works
 End
 Inspired by https://www.brinkerhoffpoetry.org/poems
 */
+
+/* 
+Pages of individual literary works
+Start
+*/
+
+
+.work-long-content {
+  padding-top: 7rem;
+  
+}
+
+.work-long-content-body {
+  display: flex;
+  justify-content: left;
+  justify-items: left;
+  align-items: center;
+}
+
+.work-long-spacing-block-small {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.work-long-spacing-block-medium {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.work-long-spacing-block-large {
+  width: 100%;
+  padding-bottom: 5rem;
+}
+
+.work-long-link {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.work-long-link a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.work-long-title {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.work-long-author {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.work-long-text {
+  font-weight: 400;
+}
+.work-long-dot-space {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.work-long-text-quote {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  border-left: 5px solid var(--light-green-accent);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 15px 30px;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+/*
+Pages of individual literary works
+End
+*/
