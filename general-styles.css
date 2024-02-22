@@ -87,7 +87,9 @@ End*/
 /* Navbar 
 Start */
 
-
+.navigtaion-wrap {
+    background-color: var(--alternate-background-color) !important;
+}
 .nav-item {
     padding-left: 20px;
     padding-right: 20px;
