@@ -79,6 +79,12 @@ a {
     transition: all 140ms linear
 }
 
+
+.body-content-section {
+    padding-bottom: 3rem;
+}
+
+
 /* Basic Body CSS for every page 
 End*/
 

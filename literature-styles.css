@@ -373,13 +373,31 @@ End
         margin-bottom: 40px !important;
     }
 
+    .literature-intro-search {
+      justify-content: center;
+    }
+
+    .search-container {
+      width: auto;
+    }
+
     .literature-intro-scroll-down {
-        text-align: center;
+        display: none;
     }
 
     .literature-intro-layout {
         margin-top: 30px !important;
+        padding-top: 40px;
         text-align: center;
+        justify-content: center;
+    }
+
+    .layout-item {
+      padding-right: 32px;
+    }
+
+    .literature-works .row {
+      padding-top: 40px !important;
     }
 
 
@@ -403,7 +421,11 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
 .literature-pieces {
     padding-left: 35px;
     padding-right: 35px;
+}
 
+.literature-pieces a {
+  text-decoration: none;
+  color: var(--font-color);
 }
 
 .literature-pieces-card {
@@ -526,66 +548,66 @@ Start
 */
 
 
-.work-long-content {
+.work-content {
   padding-top: 7rem;
   
 }
 
-.work-long-content-body {
+.work-content-body {
   display: flex;
   justify-content: left;
   justify-items: left;
   align-items: center;
 }
 
-.work-long-spacing-block-small {
+.work-spacing-block-small {
   width: 100%;
   padding-bottom: 1.5rem;
 }
 
-.work-long-spacing-block-medium {
+.work-spacing-block-medium {
   width: 100%;
   padding-bottom: 3rem;
 }
 
-.work-long-spacing-block-large {
+.work-spacing-block-large {
   width: 100%;
   padding-bottom: 5rem;
 }
 
-.work-long-link {
+.work-link {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
 }
 
-.work-long-link a {
+.work-link a {
   text-decoration: none;
   color: var(--font-color);
 }
 
-.work-long-title {
+.work-title {
   font-size: 3rem;
   line-height: 1.2;
 }
 
-.work-long-author {
+.work-author {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
 }
 
-.work-long-text {
+.work-text {
   font-weight: 400;
 }
-.work-long-dot-space {
+.work-dot-space {
   display: flex;
   justify-content: center;
   justify-items: center;
   align-items: center;
 }
 
-.work-long-text-quote {
+.worklong-text-quote {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -598,6 +620,34 @@ Start
   font-size: 20px;
   line-height: 34px;
 }
+
+
+/*
+Specific work-short styling
+Start
+*/
+.work-short-title {
+  font-size: 4.5rem;
+  line-height: 1.2;
+
+  font-family: 'Playfair Display';
+}
+
+.work-short-author {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.work-short-content-body {
+  font-size: 16px;
+}
+/*
+Specific work-short styling
+End
+*/
+
+
 
 /*
 Pages of individual literary works
