@@ -1,6 +1,9 @@
-/* Custom Variables
-Start*/
+/* 
+Custom Variables
+Start
+*/
 :root {
+    /*Color Variables*/
     --main-background-color: #FFFDF7;
     --test-background-color-previous-issue: #dad3d0;
     --old-background-color: #e7e3e0;
@@ -11,9 +14,13 @@ Start*/
     --yellow-accent: #FDD57E;
     --pink-accent: #FFBCDF;
   
+    /*Font Variables*/
+    --title-font: 'Playfair Display'
   }
-  /* Custom Variables
-  End*/
+/* 
+Custom Variables
+End
+*/
 
 /* Fonts Start */
 @font-face {
@@ -38,7 +45,7 @@ Start*/
     margin: 0;
     padding: 0;
     background-image: url(img/photo-1483354483454-4cd359948304.avif);
-    height: 65vh;
+    height: 55vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -346,7 +353,7 @@ Layout Items
 Start 
 */
 .layout-item {
-    padding-left: 32px;
+    margin-left: 32px;
 }
 
 .layout-link {
@@ -355,6 +362,7 @@ Start
 }
 .layout-link.active {
     border-bottom: 1px solid;
+    border-color: var(--light-green-accent);
 }
 /* 
 Layout Items 
@@ -444,7 +452,7 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
 }
 
 
-.literature-pieces-card h3{
+.literature-pieces-title{
     font-family: 'Playfair Display';
     font-size: 24px !important;
     font-weight: 500 !important;
@@ -489,6 +497,53 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
   font-size: 14px;
   font-weight: 500 !important;
 }
+
+/*
+Literature Pieces from the List page
+Start
+*/
+
+#literature-pieces-list-text {
+  padding-top: 3%;
+}
+
+#literature-pieces-link-tag {
+  text-decoration: none;
+  color: var(--font-color);
+}
+.literature-pieces-list-title-block {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.literature-pieces-list-title {
+  font-family: var(--title-font);
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+
+.literature-pieces-list-author {
+  font-family: var(--title-font);
+  font-size: 14px;
+  font-weight: 500 !important;
+}
+
+.literature-pieces-list-link-block {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.literature-pieces-list-link {
+  font-size: 14px;
+  font-weight: 500 !important;
+}
+
+/*
+Literature Pieces from the List page
+End
+*/
 
 
 .ud_book_box {

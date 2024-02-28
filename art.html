@@ -46,7 +46,7 @@
 <body>
     <!--Navbar code Start-->
     <div class="navigtaion-wrap  start-header start-style">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg ">
@@ -88,8 +88,7 @@
     </div>
     <!--Navbar code End-->
     <!-- Body Content Start-->
-
-    <div class="container-fluid">
+    <div class="container-fluid art-intro">
         <section>
             <figure class="txtover">
                 <figcaption>
@@ -110,6 +109,17 @@
                 </figcaption>
             </figure>
         </section>
+        <div class="col-sm-2 art-intro-search">
+            <form id="searchForm" class="search-container">
+                <div id="search-input-wrapper">
+                    <input type="text" id="search-input" placeholder="Search for a piece...">
+                    <button type="submit">
+                        <img class="search-icon"
+                            src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png">
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <br>
@@ -135,7 +145,7 @@
             <div class="col-md-4 literature-intro-layout">
                 <p>
                 <div class="layout-item"><a class="layout-link active">GRID</a></div>
-                <div class="layout-item"><a class="layout-link list">LIST</a></div>
+                <div class="layout-item nav-item"><a href="" class="layout-link list nav-link">LIST</a></div>
                 </p>
             </div>
         </div>
@@ -243,30 +253,42 @@
 
 
 
-
-    <div id="myModal" class="modal">
-        <span class="modal-close" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-            <img id="modal-img" src="" alt="modal image">
-            <a class="prev" onclick="plusSlides(-1)">&larr;</a>
-            <a class="next" onclick="plusSlides(1)">&rarr;</a>
+    <section class="container-fluid close-modal" onclick="closeModal()">&times;">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <img id="modal-img" src="" alt="modal image">
+                <a class="prev" onclick="plusSlides(-1)">&larr;</a>
+                <a class="next" onclick="plusSlides(1)">&rarr;</a>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade " id="--+--+--Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog-centered modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">--+--+--</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/img/--+--+--.png" class="card-img-top" alt="--+--+--">
+                    <p>
+                        
+                     </p>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-
 
 
 
 
     <div class="demo">
-
         <a href="" class="arrow left">
             <i></i>
             <svg>
                 <use xlink:href="#circle">
             </svg>
         </a>
-
         <a href="" class="arrow">
             <i></i>
             <svg>
@@ -323,7 +345,8 @@
                         <h4 class="footer-header footer-social-header"> — Follow Us — </h4>
                         <ul class="footer-social-list">
                             <li class="nav-item"><a href="#" class="nav-link"> Facebook <i
-                                        class="fa-brands fa-facebook fa-lg" id="footer-font-awesome-icon"></i> </a></li>
+                                        class="fa-brands fa-facebook fa-lg" id="footer-font-awesome-icon"></i> </a>
+                            </li>
                             <li class="nav-item"><a href="#" class="nav-link"> Instagram <i
                                         class="fa-brands fa-instagram fa-lg" id="footer-font-awesome-icon"></i> </a>
                             </li>
@@ -334,6 +357,18 @@
         </div>
     </section>
     <!-- Footer End-->
+
+
+
+
+
+
+
+    
+
+
+
+
 
 
 
@@ -356,8 +391,6 @@
     <!-- Link to main Javascript File (script.js) Start -->
     <script src="script.js"></script>
     <!-- Link to main Javascript File (script.js) End -->
-
-
 </body>
 
 </html>

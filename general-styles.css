@@ -1,6 +1,7 @@
 /* Custom Variables
 Start*/
 :root {
+    /*Color Variables*/
     --main-background-color: #FFFDF7;
     --test-background-color-previous-issue: #dad3d0;
     --old-background-color: #e7e3e0;
@@ -12,6 +13,10 @@ Start*/
     --light-green-accent-translucent: #87cda177;
     --yellow-accent: #FDD57E;
     --pink-accent: #FFBCDF;
+
+    /*Font Variables*/
+    --title-font: 'Playfair Display'
+
   
   }
   /* Custom Variables
@@ -97,8 +102,8 @@ Start */
     background-color: var(--alternate-background-color) !important;
 }
 .nav-item {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .nav-header-img {
