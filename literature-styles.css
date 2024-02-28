@@ -498,6 +498,27 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
   font-weight: 500 !important;
 }
 
+.literature-pieces-link i {
+  padding-left: 3px;
+  transition: 0.1s ease-in;
+}
+
+.literature-pieces-link p {
+  padding-left: 3px;
+}
+
+/* Start | Underline Animation Specific to Literature Page*/
+.literature-pieces a:hover .underline-animation::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/* End | Underline Animation Specific to Literature Page*/
+
+.literature-pieces a:hover i{
+  transform: translateX(50%);
+}
+
+
 /*
 Literature Pieces from the List page
 Start
@@ -538,6 +559,26 @@ Start
 .literature-pieces-list-link {
   font-size: 14px;
   font-weight: 500 !important;
+}
+
+.literature-pieces-list-link i {
+  padding-left: 3px;
+  transition: 0.1s ease-in;
+}
+
+.literature-pieces-list-link p {
+  padding-left: 3px;
+}
+
+/* Start | Underline Animation Specific to Literature Page*/
+.literature-pieces-list-link:hover .underline-animation::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/* End | Underline Animation Specific to Literature Page*/
+
+.literature-pieces-list-text:hover i{
+  transform: translateX(50%);
 }
 
 /*

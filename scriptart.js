@@ -186,3 +186,17 @@ function removeHighlightedSpans(element) {
 // Made with ChatGPT //
 // God blessed us with getting it to work //
 // End //
+
+
+
+const openModalBtn = document.getElementById('openModal');
+const modal = document.getElementById('modal');
+const closeModalBtn = document.getElementById('close');
+
+openModalBtn.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+closeModalBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});

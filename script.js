@@ -44,3 +44,8 @@ observer.observe();
 // Lazy Loading using lozad.js //
 // Source: https://github.com/ApoorvSaxena/lozad.js?tab=readme-ov-file#usage //
 // End //
+
+
+
+
+
