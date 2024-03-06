@@ -3,20 +3,35 @@ Custom Variables
 Start
 */
 :root {
-    /*Color Variables*/
-    --main-background-color: #FFFDF7;
-    --test-background-color-previous-issue: #dad3d0;
-    --old-background-color: #e7e3e0;
-    --alternate-background-color: #e7e3e0;
-    --font-color: #1D1B1A;
-    --dark-green-accent: #417058;
-    --light-green-accent: #87CDA1;
-    --yellow-accent: #FDD57E;
-    --pink-accent: #FFBCDF;
+  /*Color Variables*/
+  --main-background-color: #FFFDF7;
+  --test-background-color-previous-issue: #dad3d0;
+  --alternate-background-color: #e7e3e0;
+  --navbar-background-color: #e7e3e0;
+
+  --dark-green-accent: #417058;
+  --dark-green-accent-translucent: #4170588c;
+  --light-green-accent: #87CDA1;
+  --light-green-accent-translucent: #87cda177;
+  --yellow-accent: #FDD57E;
+  --pink-accent: #FFBCDF;
+
+  --logo-color:
+
+
+
+  /*Font Variables*/
+
+  /* Font Styles */
+  --title-font: 'Playfair Display'
+
+  /* Font Colors */
+  --font-color: #1D1B1A;
+  --title-font-color: #FFFDF7;
+
+
+}
   
-    /*Font Variables*/
-    --title-font: 'Playfair Display'
-  }
 /* 
 Custom Variables
 End
@@ -57,7 +72,7 @@ End
     position: relative;
     margin: 0;
     padding: 0;
-    background-image: url(img/photo-1483354483454-4cd359948304.avif);
+    background-image: url(img/bookshelf-upclose.avif);
     height: 55vh;
 
     background-attachment: fixed;
@@ -74,11 +89,14 @@ End
   }
 
   .literature-header h1 {
-    color: var(--main-background-color);
+    color: var(--title-font-color);
     font-family: 'Playfair Display';
     font-size: 100px !important;
     font-weight: 700 !important;
     letter-spacing: 7px;
+
+    text-shadow: 1px 1px 21px rgb(58, 58, 58);
+  
   }
 
   @media (max-width: 768px) {
@@ -235,8 +253,8 @@ From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
       -webkit-transform: rotate(45deg);
          transform: rotate(45deg);
          transform: rotate(45deg);
-    border-right: 2px solid black; 
-    border-bottom: 2px solid black;
+    border-right: 2px solid var(--font-color); 
+    border-bottom: 2px solid var(--font-color);
     margin: 0 0 3px 5px;
   }
   #mouse-scroll .mouse {
@@ -246,7 +264,7 @@ From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    border: 2px solid black;
+    border: 2px solid var(--font-color);
     top: 170px;
   }
   #mouse-scroll .down-arrow-1 {
@@ -283,7 +301,7 @@ From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
     width: 2px;
     display: block; 
     margin: 5px auto;
-    background: black;
+    background: var(--font-color);
     position: relative;
   }
   #mouse-scroll .mouse-in {
@@ -371,7 +389,7 @@ Start
 
 .layout-link {
     text-decoration: none;
-    color: black;
+    color: var(--font-color);
 }
 .layout-link.active {
     border-bottom: 1px solid;
@@ -747,7 +765,7 @@ Start
 }
 
 .work-short-author {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.5;
 }

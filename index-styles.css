@@ -54,6 +54,9 @@ Start */
     font-weight: 700 !important;
     letter-spacing: 7px;
 
+    text-shadow: 1px 1px 14px rgb(58, 58, 58);
+
+
   }
 
   @media (max-width: 768px) {
