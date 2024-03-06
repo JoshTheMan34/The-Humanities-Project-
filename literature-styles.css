@@ -761,7 +761,7 @@ Start
   line-height: 1.2;
   font-weight: 300;
 
-  font-family: var(--title-font);
+  font-family: "Playfair Display";
 }
 
 .work-short-author {
@@ -786,7 +786,7 @@ Start
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 300;
-  font-family: var(--title-font);
+  font-family: "Playfair Display";
 }
 /*
 Specific work-long styling
