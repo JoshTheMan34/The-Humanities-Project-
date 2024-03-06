@@ -10,9 +10,9 @@ Start*/
 :root {
   --main-background-color: #FFFDF7;
   --test-background-color-previous-issue: #dad3d0;
-  --old-background-color: #e7e3e0;
   --alternate-background-color: #e7e3e0;
   --font-color: #1D1B1A;
+  --title-font-color: #FFFDF7;
   --dark-green-accent: #417058;
   --light-green-accent: #87CDA1;
   --yellow-accent: #FDD57E;
@@ -48,7 +48,7 @@ Start */
   }
 
   .index-header h1 {
-    color: var(--main-background-color);
+    color: var(--title-font-color);
     font-family: 'Playfair Display';
     font-size: 100px !important;
     font-weight: 700 !important;
@@ -157,7 +157,7 @@ Start */
 
 .sponsors-sliders {
   align-items: center;
-  background: #f8f9fa;
+  background: var(--main-background-color);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -179,7 +179,7 @@ Start */
   }
 }
 .slider {
-  background: white;
+  background: var(--main-background-color);
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
   height: 100px;
   margin: auto;
@@ -188,7 +188,7 @@ Start */
 
 }
 .slider::before, .slider::after {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, var(--main-background-color) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100px;
   position: absolute;
@@ -434,7 +434,7 @@ Start*/
 .index-previous-issue {
   padding-top: 5vh;
   padding-bottom: 5vh;
-  background-color: #e7e3e0;
+  background-color: var(--alternate-background-color);
 }
 
 .index-previous-issue-title-column {

@@ -28,15 +28,28 @@ End
     font-style: normal;
     font-weight: normal;
     src: url('DeckardRegular_1_.woff') format('woff');
-    }
+}
     
 
-    @font-face {
+@font-face {
     font-family: 'Deckard Medium Evan';
     font-style: normal;
     font-weight: normal;
     src: url('DeckardMedium.woff') format('woff');
-    }
+}
+
+@font-face {
+    font-family: "acumin-variable",sans-serif;
+    font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
+    src: url(https://fonts.adobe.com/fonts/acumin-variable#fonts-section);
+}
+
+@font-face {
+    font-family: 'minion-pro', serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.adobe.com/fonts/minion#fonts-section);
+}
 /* Fonts End*/
 /* Home Page Figure and Figcaption */
 
@@ -528,7 +541,7 @@ Start
   padding-top: 3%;
 }
 
-#literature-pieces-link-tag {
+#literature-pieces-link-tag a{
   text-decoration: none;
   color: var(--font-color);
 }
@@ -566,18 +579,18 @@ Start
   transition: 0.1s ease-in;
 }
 
-.literature-pieces-list-link p {
+.literature-pieces-list-link span {
   padding-left: 3px;
 }
 
 /* Start | Underline Animation Specific to Literature Page*/
-.literature-pieces-list-link:hover .underline-animation::after {
+.literature-pieces-link-tag a:hover .underline-animation::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 /* End | Underline Animation Specific to Literature Page*/
 
-.literature-pieces-list-text:hover i{
+.literature-pieces-link-tag a:hover i {
   transform: translateX(50%);
 }
 
@@ -651,8 +664,8 @@ Start
 
 .work-content-body {
   display: flex;
-  justify-content: left;
-  justify-items: left;
+  justify-content: center;
+  justify-items: center;
   align-items: center;
 }
 
@@ -695,6 +708,7 @@ Start
 
 .work-text {
   font-weight: 400;
+  font-family: "acumin-variable";
 }
 .work-dot-space {
   display: flex;
@@ -718,19 +732,22 @@ Start
 }
 
 
+
+
 /*
 Specific work-short styling
 Start
 */
 .work-short-title {
-  font-size: 4.5rem;
+  font-size: 5rem;
   line-height: 1.2;
+  font-weight: 300;
 
-  font-family: 'Playfair Display';
+  font-family: var(--title-font);
 }
 
 .work-short-author {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -743,6 +760,20 @@ Specific work-short styling
 End
 */
 
+/*
+Specific work-long styling
+Start
+*/
+.work-long-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 300;
+  font-family: var(--title-font);
+}
+/*
+Specific work-long styling
+End
+*/
 
 
 /*
