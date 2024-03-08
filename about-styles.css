@@ -20,6 +20,19 @@
     text-align: center;
     margin-top: 30px;
   }
+ 
 
-  /* button art */
   
+  #teamdescriptions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+ 
+  }
+
+  #teamlinks{
+    color: var(--dark-green-accent) !important;
+  }
