@@ -31,18 +31,7 @@
     <!-- Bootstrap End -->
 
     <style>
-        .image {
-            width: 100%; /* Adjust as needed */
-            height: auto;
-            display: inline-block;
-            vertical-align: top;
-        }
-    
-        .image video {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+
     </style>
 
     <title>The Magnet: Media</title>
@@ -197,55 +186,10 @@
             </div>
         </div>
     </section>
-
     <!--Navbar code End-->
-    
-    <div id="imageContainer"></div>
+    <h1>test</h1>
 
-    <script>
-        const imageContainer = document.getElementById('imageContainer');
-        const imageFolderPath = 'imageFolderPath'; // Adjust the folder path as needed
-        let totalVideos;
-    
-        // Fetch total number of videos
-        fetch(`${imageFolderPath}/index.json`) // Assuming you have an index.json file with video information
-            .then(response => response.json())
-            .then(data => {
-                totalVideos = data.videos.length;
-                generateVideos(data);
-            })
-            .catch(error => console.error('Error fetching data:', error));
-    
-        function getRandomVideo(data) {
-            const index = Math.floor(Math.random() * totalVideos);
-            return `${imageFolderPath}/${data.videos[index]}`;
-        }
-    
-        function generateVideos(data) {
-            for (let i = 0; i < totalVideos; i++) {
-                const videoContainer = document.createElement('div');
-                videoContainer.className = 'image';
-    
-                const video = document.createElement('video');
-                video.src = `${imageFolderPath}/${data.videos[i]}`;
-                video.alt = 'Random Video';
-                video.controls = false; // Hide default controls
-                video.autoplay = true; // Automatically start playing
-                video.muted = true; // Mute the video to prevent autoplay restrictions
-                video.preload = 'none'; // Do not preload the video initially
-    
-                videoContainer.appendChild(video);
-                imageContainer.appendChild(videoContainer);
-    
-                // Add event listener for resetting the video to the beginning when it ends
-                video.addEventListener('ended', () => {
-                    video.currentTime = 0;
-                    video.play();
-                });
-            }
-        }
-    </script>
-    
+
     <!-- Footer Start-->
     <section class="footer-section">
         <div class="container">
