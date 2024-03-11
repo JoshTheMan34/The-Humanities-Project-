@@ -1,0 +1,814 @@
+/* 
+Custom Variables
+Start
+*/
+:root {
+  /*Color Variables*/
+  --main-background-color: #FFFDF7;
+  --test-background-color-previous-issue: #dad3d0;
+  --alternate-background-color: #e7e3e0;
+  --navbar-background-color: #e7e3e0;
+
+  --dark-green-accent: #417058;
+  --dark-green-accent-translucent: #4170588c;
+  --light-green-accent: #87CDA1;
+  --light-green-accent-translucent: #87cda177;
+  --yellow-accent: #FDD57E;
+  --pink-accent: #FFBCDF;
+
+  --logo-color:
+
+
+
+  /*Font Variables*/
+
+  /* Font Styles */
+  --title-font: 'Playfair Display'
+
+  /* Font Colors */
+  --font-color: #1D1B1A;
+  --title-font-color: #FFFDF7;
+
+
+}
+  
+/* 
+Custom Variables
+End
+*/
+
+/* Fonts Start */
+@font-face {
+    font-family: 'Deckard-Regular Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('DeckardRegular_1_.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Deckard Medium Evan';
+    font-style: normal;
+    font-weight: normal;
+    src: url('DeckardMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: "acumin-variable",sans-serif;
+    font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
+    src: url(https://fonts.adobe.com/fonts/acumin-variable#fonts-section);
+}
+
+@font-face {
+    font-family: 'minion-pro', serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.adobe.com/fonts/minion#fonts-section);
+}
+/* Fonts End*/
+/* Home Page Figure and Figcaption */
+
+.txtover {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bookshelf-upclose.avif);
+    height: 55vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .txtover figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .literature-header h1 {
+    color: var(--title-font-color);
+    font-family: 'Playfair Display';
+    font-size: 100px !important;
+    font-weight: 700 !important;
+    letter-spacing: 7px;
+
+    text-shadow: 1px 1px 21px rgb(58, 58, 58);
+  
+  }
+
+  @media (max-width: 768px) {
+    .literature-header h1 { 
+          font-size: 50px !important; 
+      }
+  }
+/* Home Page Figure and Figcaption */
+
+/* Literature 
+Intro 
+Start 
+*/
+
+.literature-intro {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-top: 28px;
+}
+
+.literature-intro-search {
+    font-family: 'Deckard Medium Evan';
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/*
+Search Bar
+Start
+From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
+*/
+
+.search-container {
+  width: 490px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#search-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#search-input {
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #d0cfce;
+  flex-grow: 2;
+
+  /*
+  From Codepen: https://codepen.io/noahbres/pen/MXLBPJ
+  Start
+  */
+  border-radius: 10em;
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 
+  0px 3px 4px 0px rgba(0,0,0,0.14), 
+  0px 1px 8px 0px rgba(0,0,0,0.12) !important;
+  /*
+  From Codepen: https://codepen.io/noahbres/pen/MXLBPJ
+  End
+  */  
+
+  outline: none;
+  background-color: transparent;
+}
+
+#search-input:focus {
+  border: 1px solid var(--light-green-accent);
+  transition: 0.35s ease;
+  color: var(--light-green-accent);
+}
+
+#search-input:focus::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+#search-input:focus::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+#search-input:focus:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.search-container button {
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  
+}
+
+.search-container button:focus {
+  border: none;
+  outline: none;
+}
+
+.search-container button:focus {
+  outline: none !important;
+}
+
+.search-icon {
+  width: 55px;
+  height: 55px;
+}
+
+
+/*
+Search Bar
+End
+From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
+*/
+/* 
+Scroll Down Arrow 
+Start
+From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
+*/
+.literature-intro-scroll-down {
+    font-family: 'Deckard Medium Evan';
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mouse-scroll {
+    display: block;
+  }
+  #mouse-scroll {
+    margin: auto;
+    left: 50%;
+    top: 70px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 9999;
+  }
+  #mouse-scroll span{
+    display: block;
+    width: 5px; 
+    height: 5px;
+    -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+         transform: rotate(45deg);
+         transform: rotate(45deg);
+    border-right: 2px solid var(--font-color); 
+    border-bottom: 2px solid var(--font-color);
+    margin: 0 0 3px 5px;
+  }
+  #mouse-scroll .mouse {
+    height: 21px;
+    width: 14px;
+    border-radius: 10px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    border: 2px solid var(--font-color);
+    top: 170px;
+  }
+  #mouse-scroll .down-arrow-1 {
+    margin-top: 6px;
+  }
+  #mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
+    -webkit-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+      -moz-animation: mouse-scroll 1s infinite;
+  }
+  #mouse-croll .down-arrow-1 {
+     -webkit-animation-delay: .1s;
+     animation-delay: .1s;
+     -moz-animation-delay: .1s;
+     -webkit-animation-direction: alternate;
+     animation-direction: alternate;
+  }
+  #mouse-scroll .down-arrow-2 {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s; 
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+  #mouse-scroll .down-arrow-3 {
+     -webkit-animation-delay: .3s;
+     animation-delay: .3s; 
+     -moz-animation-dekay: .3s;
+     -webkit-animation-direction: alternate;
+     animation-direction: alternate;
+  }
+  #mouse-scroll .mouse-in {
+    height: 5px;
+    width: 2px;
+    display: block; 
+    margin: 5px auto;
+    background: var(--font-color);
+    position: relative;
+  }
+  #mouse-scroll .mouse-in {
+   -webkit-animation: animated-mouse 1.2s ease infinite;
+   animation: animated-mouse 1.2s ease infinite;
+    -moz-animation: mouse-animated 1.2s ease infinite;
+  }
+  
+  @-webkit-keyframes animated-mouse {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+       opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  @keyframes animated-mouse {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+      }
+  }
+  @-webkit-keyframes mouse-scroll {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    } 
+  }
+  @keyframes mouse-scroll {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+/* 
+Scroll Down Arrow 
+End
+From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
+*/
+
+/*
+Literature Intro Layout
+Start
+*/
+.literature-intro-layout {
+    font-family: 'Deckard Medium Evan';
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/* 
+Layout Items 
+Start 
+*/
+.layout-item {
+    margin-left: 32px;
+}
+
+.layout-link {
+    text-decoration: none;
+    color: var(--font-color);
+}
+.layout-link.active {
+    border-bottom: 1px solid;
+    border-color: var(--light-green-accent);
+}
+/* 
+Layout Items 
+End 
+*/
+
+/* 
+Literature Intro Layout 
+End
+*/
+
+
+@media (max-width: 768px) {
+
+    .literature-intro-showing {
+        margin-bottom: 40px !important;
+    }
+
+    .literature-intro-search {
+      justify-content: center;
+    }
+
+    .search-container {
+      width: auto;
+    }
+
+    .literature-intro-scroll-down {
+        display: none;
+    }
+
+    .literature-intro-layout {
+        margin-top: 30px !important;
+        padding-top: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .layout-item {
+      padding-right: 32px;
+    }
+
+    .literature-works .row {
+      padding-top: 40px !important;
+    }
+
+
+}
+
+/* 
+Literature Intro 
+End 
+*/
+
+/*
+Literature Works
+Start
+Inspired by https://www.brinkerhoffpoetry.org/poems
+*/
+
+.literature-works .row {
+  padding-top: 70px;
+}
+
+.literature-pieces {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.literature-pieces a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.literature-pieces-card {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    background: #e6e0dc;
+
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+
+.literature-pieces-title{
+    font-family: 'Playfair Display';
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    margin-top: 5%;
+
+}
+
+.literature-pieces-image {
+    width: 58%;
+    margin: 30px auto;
+}
+
+.position {
+    padding-bottom: 140%;
+    position: relative;
+    height: 0;
+}
+.position img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.literature-pieces-author{
+    font-family: 'Playfair Display';
+    font-size: 14px;
+    font-weight: 500 !important;
+
+    background: #e1cac2;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+} 
+
+.literature-pieces-link {
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 500 !important;
+}
+
+.literature-pieces-link i {
+  padding-left: 3px;
+  transition: 0.1s ease-in;
+}
+
+.literature-pieces-link p {
+  padding-left: 3px;
+}
+
+/* Start | Underline Animation Specific to Literature Page*/
+.literature-pieces a:hover .underline-animation::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/* End | Underline Animation Specific to Literature Page*/
+
+.literature-pieces a:hover i{
+  transform: translateX(50%);
+}
+
+
+/*
+Literature Pieces from the List page
+Start
+*/
+
+#literature-pieces-list-text {
+  padding-top: 3%;
+}
+
+#literature-pieces-link-tag a{
+  text-decoration: none;
+  color: var(--font-color);
+}
+.literature-pieces-list-title-block {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.literature-pieces-list-title {
+  font-family: var(--title-font);
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+
+.literature-pieces-list-author {
+  font-family: var(--title-font);
+  font-size: 14px;
+  font-weight: 500 !important;
+}
+
+.literature-pieces-list-link-block {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.literature-pieces-list-link {
+  font-size: 14px;
+  font-weight: 500 !important;
+}
+
+.literature-pieces-list-link i {
+  padding-left: 3px;
+  transition: 0.1s ease-in;
+}
+
+.literature-pieces-list-link span {
+  padding-left: 3px;
+}
+
+/* Start | Underline Animation Specific to Literature Page*/
+.literature-pieces-link-tag a:hover .underline-animation::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/* End | Underline Animation Specific to Literature Page*/
+
+.literature-pieces-link-tag a:hover i {
+  transform: translateX(50%);
+}
+
+/*
+Literature Pieces from the List page
+End
+*/
+
+
+.ud_book_box {
+  position: relative;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  perspective: 1800px;
+}
+
+.ud_book {
+  transform-style: preserve-3d;
+  transform: rotate3d(0, 1, 0, 0);
+  transition: all 300ms;
+}
+
+.ud_book:hover {
+  transform: rotate3d(0, 1, 0, 35deg);
+}
+
+.ud_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #dcd6d2;
+  /*
+  background-image: url("img/test-photos/photo-1524401597352-ec4463663233.jpg");
+  background-size: cover;
+  */
+  height: 100%;
+  width: 60px;
+  
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+  transform: rotate3d(0, 1, 0, -86deg) translate3d(-100%, 0, 0);
+}
+
+.ud_back div{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  height: 41px;
+  background: #d8c1b7;
+  width: 100%;
+}
+
+
+/*
+Literature Works
+End
+Inspired by https://www.brinkerhoffpoetry.org/poems
+*/
+
+/* 
+Pages of individual literary works
+Start
+*/
+
+
+.work-content {
+  padding-top: 7rem;
+  
+}
+
+.work-content-body {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.work-spacing-block-small {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.work-spacing-block-medium {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.work-spacing-block-large {
+  width: 100%;
+  padding-bottom: 5rem;
+}
+
+.work-link {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.work-link a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.work-title {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.work-author {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.work-text {
+  font-weight: 400;
+  font-family: "acumin-variable";
+}
+.work-dot-space {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.worklong-text-quote {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  border-left: 5px solid var(--light-green-accent);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 15px 30px;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+
+
+
+/*
+Specific work-short styling
+Start
+*/
+@media (max-width: 768px) {
+  .work-short-content-body {
+    display: flex !important;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+}
+.work-short-title {
+  font-size: 5rem;
+  line-height: 1.2;
+  font-weight: 300;
+
+  font-family: "Playfair Display";
+}
+
+.work-short-author {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.work-short-content-body {
+  font-size: 16px;
+}
+/*
+Specific work-short styling
+End
+*/
+
+/*
+Specific work-long styling
+Start
+*/
+.work-long-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 300;
+  font-family: "Playfair Display";
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+}
+/*
+Specific work-long styling
+End
+*/
+
+
+/*
+Pages of individual literary works
+End
+*/

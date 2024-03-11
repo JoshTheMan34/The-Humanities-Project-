@@ -1,0 +1,559 @@
+/* Custom Variables
+Start*/
+:root {
+    /*Color Variables*/
+    --main-background-color: #FFFDF7;
+    --test-background-color-previous-issue: #dad3d0;
+    --alternate-background-color: #e7e3e0;
+    --navbar-background-color: #e7e3e0;
+
+    --dark-green-accent: #417058;
+    --dark-green-accent-translucent: #4170588c;
+    --light-green-accent: #87CDA1;
+    --light-green-accent-translucent: #87cda177;
+    --yellow-accent: #FDD57E;
+    --pink-accent: #FFBCDF;
+
+    --logo-color:
+
+
+
+    /*Font Variables*/
+
+    /* Font Styles */
+    --title-font: 'Playfair Display'
+
+    /* Font Colors */
+    --font-color: #1D1B1A;
+    --title-font-color: #FFFDF7;
+
+  
+  }
+  /* Custom Variables
+  End*/
+
+
+
+/* Custom Scroll Bar Start
+Code and help from both
+https://ishadeed.com/article/custom-scrollbars-css/
+and
+https://www.youtube.com/watch?v=lvKK2fs6h4I
+*/
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--main-background-color);
+    border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 6.1px solid transparent;
+    background-clip: content-box;
+    background-color: var(--dark-green-accent-translucent);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: default !important;
+  }
+
+  @supports(scrollbar-color: (var(--dark-green-accent-translucent) var(--main-background-color))) {
+    * {
+        scrollbar-color: var(--dark-green-accent-translucent) var(--main-background-color);
+        scrollbar-width: thin;
+    }
+  }
+/* Custom Scroll Bar End
+Code and help from both
+https://ishadeed.com/article/custom-scrollbars-css/
+and
+https://www.youtube.com/watch?v=lvKK2fs6h4I
+*/
+
+/* Basic Body CSS for every page 
+Start*/
+
+html, body {
+    background-color: var(--main-background-color) !important;
+    color: var(--font-color) !important;
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+body {
+    overflow-y: auto;
+    direction: ltr;
+}
+a {
+    transition: all 140ms linear
+}
+
+
+.body-content-section {
+    padding-bottom: 3rem;
+}
+
+
+
+/* Basic Body CSS for every page 
+End*/
+
+
+
+/* Navbar 
+Start */
+
+.navigation-wrap {
+    background-color: var(--navbar-background-color) !important;
+}
+
+.navigation-wrap .navbar {
+    background-color: var(--navbar-background-color) !important;
+}
+.nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-header-img {
+    justify-content: center;
+    width: 87px;
+    height: 87px;
+    fill: white;
+}
+
+#navbarNav {
+    flex-grow: 0;
+}
+
+nav a {
+    font-family: 'Playfair Display';
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: var(--font-color) !important;
+}
+
+/* Navbar Code copied from codepen: https://codepen.io/ig_design/pen/omQXoQ
+Start */
+
+.nav-link{
+    transition: all 200ms linear;
+}
+.nav-item:hover .nav-link{
+	color: var(--dark-green-accent) !important;
+}
+.nav-item.active .nav-link{
+	color: #777 !important;
+}
+.nav-link {
+	position: relative;
+	display: inline-block;
+}
+.nav-item:after{
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	content: '';
+	background-color: var(--dark-green-accent);
+	opacity: 0;
+    transition: all 200ms linear;
+}
+.nav-item:hover:after{
+	bottom: 0;
+	opacity: 1;
+}
+.nav-item.active:hover:after{
+	opacity: 0;
+}
+.nav-item{
+	position: relative;
+    transition: all 200ms linear;
+}
+
+/* Navbar Code copied from codepen: https://codepen.io/ig_design/pen/omQXoQ
+End */
+
+/* Navbar Toggler when Responsive 
+Start */
+
+.navbar-toggler {
+	float: right;
+	border: none !important;
+	padding-right: 0;
+    outline: none !important;
+}
+nav .navbar-toggler-icon {
+	width: 24px;
+	height: 17px;
+	background-image: none;
+	position: relative;
+	border-bottom: 1px solid var(--font-color);
+    transition: all 300ms linear;
+}
+nav .navbar-toggler-icon:after, 
+nav .navbar-toggler-icon:before{
+	width: 24px;
+	position: absolute;
+	height: 1px;
+	background-color: var(--font-color);
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+    transition: all 300ms linear;
+}
+nav .navbar-toggler-icon:after{
+	top: 8px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+
+/* Navbar Toggler when Responsive 
+End */
+
+
+/*
+Light and Dark Modes
+Start
+*/
+
+.light {
+    --font-color: #1D1B1A;
+    --main-background-color: #FFFDF7;
+}
+
+.dark {
+    --font-color: #FFFDF7;
+    --title-font-color:#FFFDF7;
+    --main-background-color: #2a2a2e;
+    --alternate-background-color: #151518;
+    --navbar-background-color: #424249;
+
+
+}
+
+.tb-nav-inside {
+    visibility: hidden;
+    display: none;
+}
+
+@media(max-width: 992px) {
+    .tb-nav-inside {
+        visibility: visible;
+        display: block;
+    }
+
+    .tb-nav-outside {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.themeButton {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    position: relative;
+    transition: all 200ms linear;
+}
+
+.theme-icon {
+    display: none;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .dark #darkIcon {
+    display: block;
+  }
+  
+  .light #lightIcon {
+    display: block;
+  }
+
+/*
+Light and Dark Modes
+End
+*/
+
+
+/* Navbar 
+End */
+
+
+
+/* Footer 
+Start */
+
+/* Footer Code made by us 
+Start */
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+.footer-social-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+.footer-img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.footer-brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-header {
+    font-family: 'Playfair Display';
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    padding-bottom: 21px;
+}
+
+
+/* Making the more footer responsive*/
+@media (max-width: 768px) {
+	.footer-social {
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-nav {
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Footer Code made by us 
+End */
+
+
+/* 
+Code Copied from CodePen for Footer 
+Start 
+(we edited some of this however)
+*/
+
+.footer-bs {
+    background-color: var(--main-background-color);
+	padding: 60px 40px;
+	color: var(--font-color);
+	margin-bottom: 20px;
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 6px;
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { 
+    padding: 10px 25px; 
+}
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { 
+    border-color: transparent; 
+}
+.footer-bs .footer-brand h2 { 
+    margin:0px 0px 10px; 
+}
+.footer-bs .footer-brand p { 
+    font-size:12px; 
+    color:var(--font-color); 
+}
+
+.footer-bs .footer-nav ul.pages { 
+    list-style:none; 
+    padding:0px; 
+}
+.footer-bs .footer-nav ul.pages li { 
+    padding:5px 0px;
+}
+.footer-bs .footer-nav ul.pages a { 
+    color:var(--font-color); 
+    font-weight:bold; 
+    text-decoration: none;
+}
+.footer-bs .footer-nav ul.pages a:hover { 
+    color:var(--font-color); 
+    text-decoration:none; 
+}
+.footer-bs .footer-nav h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+}
+.footer-bs .footer-nav ul.list { 
+    list-style:none; padding:0px; 
+}
+.footer-bs .footer-nav ul.list li { 
+    padding:5px 0px;
+}
+.footer-bs .footer-nav ul.list a { 
+    color:var(--font-color);
+    text-decoration: none;
+}
+.footer-bs .footer-nav ul.list a:hover { 
+    color:var(--font-color); 
+    text-decoration:none; 
+}
+.footer-bs .footer-social ul { 
+    list-style:none; 
+    padding:0px; 
+}
+.footer-bs .footer-social h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.footer-bs .footer-social li {
+     padding:5px 4px;
+}
+.footer-bs .footer-social a { 
+    color:var(--font-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+.footer-bs .footer-social a:hover { 
+    color:var(--font-color); 
+    text-decoration:none; 
+}
+
+.footer-bs .footer-ns h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+}
+.footer-bs .footer-ns p { 
+    font-size:12px; 
+    color:var(--font-color); 
+}
+
+@media (min-width: 768px) {
+	.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { 
+        border-left:solid 1px #87cda100; 
+    }
+}
+
+/* Code Copied from CodePen for Footer 
+End */
+
+
+/* Footer 
+End */
+
+/* Custom Page Cursor (copied from a codepen: https://codepen.io/ig_design/pen/OrLBqO
+Start */
+
+/* This is in an @media tag so that it only applies to desktop devices 
+and not mobile devices (it is based on screen width) 
+(see the "min-width" attribute for reference)*/
+
+@media screen and (min-width: 1025px) {
+    * {
+        cursor: none;
+    }
+    .cursor {
+        --size: 8px;
+        height: var(--size);
+        width:  var(--size);
+        border-radius: 50%;
+        position: absolute;
+        z-index: 10000;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+    .cursor.cursor-shadow {
+        background-color: transparent;
+        border: 1px solid #000000;
+        --size: 38px; /* Changes the size of the cursor border */
+        transition: top .2s, left .2s,
+                    width .2s, height .2s,
+                    background-color .2s, border-color 0.2s;
+        transition-timing-function: ease-out;
+    }
+    .cursor.cursor-dot {
+        background: var(--light-green-accent);
+        transition: width .2s, height .2s;
+    }
+    .cursor-shadow.active {
+        --size: 140px; /* Changes the size of the cursor when it is hovering an item with the "cursor-link" class */
+        border-color: rgb(255, 255, 255);
+        background-color: var(--light-green-accent-translucent);
+    }
+    .cursor-dot.active {
+          --size: 0;
+    }
+    a {
+          cursor: none;
+    }
+    a:hover {
+          text-decoration: none;
+    }
+}
+
+/* Custom Page Cursor (copied from a codepen: https://codepen.io/ig_design/pen/OrLBqO
+End */
+
+
+/* Cool underline animation
+Start*/
+
+.underline-animation {
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.underline-animation::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--light-green-accent);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}

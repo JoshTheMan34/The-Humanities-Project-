@@ -1,0 +1,47 @@
+/*button of dreams*/
+.hidden {
+    display: none;
+  }
+  
+  main > * {
+    padding: 1rem;
+  }
+  
+  nav, footer {
+    background: black;
+    color: #fff;
+  }
+
+  #about__button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25vh;
+    
+
+    
+  }
+ 
+#thebutton{
+  background-color: var(--dark-green-accent) !important;
+  color: white;
+  font-size: 20px;
+}
+  
+  #teamdescriptions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+ 
+  }
+
+  #teamlinks{
+    background-color: var(--dark-green-accent) !important;
+    color: #fff;
+  }
+   

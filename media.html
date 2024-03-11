@@ -4,16 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>The Magnet</title>
+
+    <!-- Link to CSS Files Start -->
+    <!-- CSS for all Pages--> <link rel="stylesheet" href="general-styles.css">
+    <!-- Media Page Specific CSS--> <link rel="stylesheet" href="media-styles.css">
+    <!-- Link to CSS Files End -->
+
+    <!-- Tab Icon Start -->
+    <link rel="shortcut icon" href="img/The Magnet Logos/full_color_magnet_logo.png">
+    <!-- Tab Icon End -->
+
+    <!-- Fonts Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font's End -->
+
+    <!-- Font Awesome (Used for Icons) Start -->
+    <script src="https://kit.fontawesome.com/b58d49b83c.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome (Used for Icons) End -->
+
+
+    <!-- Bootstrap Start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Bootstrap End -->
+
+    <style>
+        .image {
+            width: 100%; /* Adjust as needed */
+            height: auto;
+            display: inline-block;
+            vertical-align: top;
+        }
+    
+        .image video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+
+    <title>The Magnet: Media</title>
 </head>
 <body>
-<<<<<<< Updated upstream
-    <section>
-        <nav>
-            
-        </nav>
-=======
     <!--Navbar code Start-->
     <section class="navbar-section">
         <div class="navigation-wrap  start-header start-style">
@@ -29,7 +63,7 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="art.html">Art</a>
@@ -38,7 +72,7 @@
                                     <a class="nav-link" href="literature.html">Literature</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="media.html">Media</a>
+                                    <a class="nav-link active" href="media.html">Media</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="credits.html">Credits</a>
@@ -162,7 +196,115 @@
                 </div>
             </div>
         </div>
->>>>>>> Stashed changes
     </section>
+
+    <!--Navbar code End-->
+    
+    <div id="imageContainer"></div>
+
+    <script>
+        const imageContainer = document.getElementById('imageContainer');
+        const imageFolderPath = 'imageFolderPath'; // Adjust the folder path as needed
+        let totalVideos;
+    
+        // Fetch total number of videos
+        fetch(`${imageFolderPath}/index.json`) // Assuming you have an index.json file with video information
+            .then(response => response.json())
+            .then(data => {
+                totalVideos = data.videos.length;
+                generateVideos(data);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    
+        function getRandomVideo(data) {
+            const index = Math.floor(Math.random() * totalVideos);
+            return `${imageFolderPath}/${data.videos[index]}`;
+        }
+    
+        function generateVideos(data) {
+            for (let i = 0; i < totalVideos; i++) {
+                const videoContainer = document.createElement('div');
+                videoContainer.className = 'image';
+    
+                const video = document.createElement('video');
+                video.src = `${imageFolderPath}/${data.videos[i]}`;
+                video.alt = 'Random Video';
+                video.controls = false; // Hide default controls
+                video.autoplay = true; // Automatically start playing
+                video.muted = true; // Mute the video to prevent autoplay restrictions
+                video.preload = 'none'; // Do not preload the video initially
+    
+                videoContainer.appendChild(video);
+                imageContainer.appendChild(videoContainer);
+    
+                // Add event listener for resetting the video to the beginning when it ends
+                video.addEventListener('ended', () => {
+                    video.currentTime = 0;
+                    video.play();
+                });
+            }
+        }
+    </script>
+    
+    <!-- Footer Start-->
+    <section class="footer-section">
+        <div class="container">
+            <footer class="footer-bs">
+                <div class="row">
+                    <div class="col-md-4 footer-nav animated fadeInUp">
+                            <h4 class="footer-header"> — Menu — </h4>
+                            <ul class="pages">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="art.html" class="nav-link">Art</a></li>
+                                <li class="nav-item"><a href="literature.html" class="nav-link">Literature</a></li>
+                                <li class="nav-item"><a href="media.html" class="nav-link">Media</a></li>
+                                <li class="nav-item"><a href="credits.html" class="nav-link">Credits</a></li>
+                                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                            </ul>
+                    </div>
+                    <div class="col-md-4 footer-brand animated fadeInLeft">
+                        <a href="index.html"><img class="footer-img" src="img/The Magnet Logos/black transparent_magnet_logo.png"></a>
+                        <p>
+                            Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.
+                        </p>
+                    </div>
+                    <div class="col-md-4 footer-social animated fadeInDown">
+                        <h4 class="footer-header footer-social-header"> — Follow Us — </h4>
+                        <ul class="footer-social-list">
+                            <li class="nav-item"><a href="#" class="nav-link"> Facebook <i class="fa-brands fa-facebook fa-lg" id="footer-font-awesome-icon"></i> </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"> Instagram <i class="fa-brands fa-instagram fa-lg" id="footer-font-awesome-icon"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <!-- Footer End-->
+
+
+
+    <!-- Custom page cursor Start -->
+    <!-- Codepen link: https://codepen.io/ig_design/pen/OrLBqO  -->
+    <div class="cursor cursor-shadow"></div>
+    <div class="cursor cursor-dot"></div>
+    <!-- Custom page cursor End -->
+
+
+
+
+    <!-- External Javascript Files for the typewriter effect and the custom page cursor Start-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <!-- External Javascript Files for the typewriter effect and the custom page cursor End-->
+    
+    <!-- Link to main Javascript File (script.js) Start -->
+    <script src="script.js"></script>
+    <!-- Link to main Javascript File (script.js) End -->
+
+    <!-- Link to theme-switch Javascript File (script.js) Start -->
+    <script src="theme-switch.js"></script>
+    <!-- Link to theme-switch Javascript File (script.js) End -->
+    
 </body>
 </html>
+
