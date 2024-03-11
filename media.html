@@ -31,7 +31,25 @@
     <!-- Bootstrap End -->
 
     <style>
+        .parallax-container {
+            position: relative;
+            text-align: center;
+        }
 
+        .parallax-img{
+            width: 120vw;
+            
+        }
+
+        .title-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em; /* Adjust the font size as needed */
+            color: white; /* Set the text color */
+            /* Add any other styling you want for the title */
+        }
     </style>
 
     <title>The Magnet: Media</title>
@@ -39,7 +57,7 @@
 <body>
     <!--Navbar code Start-->
     <section class="navbar-section">
-        <div class="navigation-wrap  start-header start-style">
+        <div class="navigtaion-wrap  start-header start-style">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -187,9 +205,20 @@
         </div>
     </section>
     <!--Navbar code End-->
-    <h1>test</h1>
+    <!--********************MEDIA PAGE CODE**************************-->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <div class="parallax-container">
+        <img src="img/AI_photographer.png" alt="parallax" class="rellax parallax-img" data-rellax-speed="-3">
+        <div class="title-text">MEDIA</div>
+    </div>
+    <div style="height: 500px; background-color: wheat;">
 
-
+    </div>
+      <script>
+        // Accepts any class name
+        var rellax = new Rellax('.rellax');
+      </script>
+    <!--********************MEDIA PAGE CODE**************************-->
     <!-- Footer Start-->
     <section class="footer-section">
         <div class="container">
