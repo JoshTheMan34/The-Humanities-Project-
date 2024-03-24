@@ -19,6 +19,37 @@ Start*/
   --pink-accent: #FFBCDF;
 
 }
+
+/* Fonts Start */
+@font-face {
+  font-family: 'Deckard-Regular Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('DeckardRegular_1_.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Deckard Medium Evan';
+  font-style: normal;
+  font-weight: normal;
+  src: url('DeckardMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: "acumin-variable",sans-serif;
+  font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
+  src: url(https://fonts.adobe.com/fonts/acumin-variable#fonts-section);
+}
+
+@font-face {
+  font-family: 'minion-pro', serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.adobe.com/fonts/minion#fonts-section);
+}
+/* Fonts End*/
+
 /* Custom Variables
 End*/
 
@@ -223,12 +254,6 @@ End */
 
 /* Index Theme
  Start */
- 
-/* Growing Vines
-Start */
-
-/* Growing Vines
-End */
 
 .index-theme {
   margin-top: 140px;
@@ -589,22 +614,68 @@ Start */
 /* Makes the underline color change on hover
 End */
 
-.index-snippets-text-section {
+.index-snippets-text-subheader {
   padding-top: 21px;
 }
 
-.index-snippets-text {
-  border-top: 1px dashed var(--light-green-accent);
-  padding-top: 14px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-}
+
 
 
 /* Index Snippets 
 End*/
 
+/* Index Tree
+Begin */
 
+.index-tree {
+  
+  margin-top: 140px;
+  margin-bottom: 210px;
+  width: 100%;
+}
+
+.index-tree-subheader {
+  font-family: "acumin-variable";
+  font-size: 21px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.index-tree-header {
+  font-family: 'Playfair Display';
+  font-weight: 700 !important;
+  font-size: 100px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-tree iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.index-tree-desc {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+.index-tree-text {
+  font-family: "acumin-variable";
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Index Tree
+End */
 
 
 /* Index Body Content 

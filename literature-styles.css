@@ -9,6 +9,9 @@ Start
   --alternate-background-color: #e7e3e0;
   --navbar-background-color: #e7e3e0;
 
+  --magazine-cover: #367d78;
+  --magazine-text-wrap: #e8c7a9;
+
   --dark-green-accent: #417058;
   --dark-green-accent-translucent: #4170588c;
   --light-green-accent: #87CDA1;
@@ -31,7 +34,7 @@ Start
 
 
 }
-  
+
 /* 
 Custom Variables
 End
@@ -44,7 +47,7 @@ End
     font-weight: normal;
     src: url('DeckardRegular_1_.woff') format('woff');
 }
-    
+
 
 @font-face {
     font-family: 'Deckard Medium Evan';
@@ -80,7 +83,7 @@ End
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   .txtover figcaption {
     position: absolute;
     top: 50%;
@@ -96,7 +99,7 @@ End
     letter-spacing: 7px;
 
     text-shadow: 1px 1px 21px rgb(58, 58, 58);
-  
+
   }
 
   @media (max-width: 768px) {
@@ -197,7 +200,7 @@ From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
   background: transparent;
   position: absolute;
   right: 0;
-  
+
 }
 
 .search-container button:focus {
@@ -309,7 +312,7 @@ From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
    animation: animated-mouse 1.2s ease infinite;
     -moz-animation: mouse-animated 1.2s ease infinite;
   }
-  
+
   @-webkit-keyframes animated-mouse {
     0% {
       opacity: 1;
@@ -473,7 +476,7 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
     padding-left: 25px;
     padding-right: 25px;
 
-    background: #e6e0dc;
+    background: var(--magazine-cover);
 
     display: flex;
     flex: 1 1 auto;
@@ -487,6 +490,7 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
     font-family: 'Playfair Display';
     font-size: 24px !important;
     font-weight: 500 !important;
+    color: #ffede1;
     margin-top: 5%;
 
 }
@@ -514,8 +518,9 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
     font-size: 14px;
     font-weight: 500 !important;
 
-    background: #e1cac2;
+    background: var(--magazine-text-wrap);
 
+    color: #3c271d;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
@@ -640,14 +645,14 @@ End
   position: absolute;
   top: 0;
   left: 0;
-  background: #dcd6d2;
+  background: #2f6f6c;
   /*
   background-image: url("img/test-photos/photo-1524401597352-ec4463663233.jpg");
   background-size: cover;
   */
   height: 100%;
   width: 60px;
-  
+
   transform-style: preserve-3d;
   transform-origin: 0% 50%;
   transform: rotate3d(0, 1, 0, -86deg) translate3d(-100%, 0, 0);
@@ -658,7 +663,7 @@ End
   bottom:0;
   left: 0;
   height: 41px;
-  background: #d8c1b7;
+  background: #d8b89a;
   width: 100%;
 }
 
@@ -677,7 +682,7 @@ Start
 
 .work-content {
   padding-top: 7rem;
-  
+
 }
 
 .work-content-body {
@@ -722,6 +727,8 @@ Start
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
+  font-family: "acumin-variable";
+
 }
 
 .work-text {
@@ -756,6 +763,14 @@ Start
 Specific work-short styling
 Start
 */
+@media (max-width: 768px) {
+  .work-short-content-body {
+    display: flex !important;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+}
 .work-short-title {
   font-size: 5rem;
   line-height: 1.2;
@@ -768,6 +783,8 @@ Start
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.5;
+  font-family: "acumin-variable";
+
 }
 
 .work-short-content-body {
@@ -787,6 +804,12 @@ Start
   line-height: 1.2;
   font-weight: 300;
   font-family: "Playfair Display";
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
 }
 /*
 Specific work-long styling

@@ -27,7 +27,7 @@ Start*/
     --font-color: #1D1B1A;
     --title-font-color: #FFFDF7;
 
-  
+
   }
   /* Custom Variables
   End*/
@@ -43,12 +43,12 @@ https://www.youtube.com/watch?v=lvKK2fs6h4I
 ::-webkit-scrollbar {
     width: 20px;
   }
-  
+
   ::-webkit-scrollbar-track {
     background-color: var(--main-background-color);
     border-radius: 100px;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     border-radius: 100px;
     border: 6.1px solid transparent;
@@ -90,6 +90,7 @@ html, body {
 body {
     overflow-y: auto;
     direction: ltr;
+    
 }
 a {
     transition: all 140ms linear
@@ -111,6 +112,10 @@ End*/
 Start */
 
 .navigation-wrap {
+    background-color: var(--navbar-background-color) !important;
+}
+
+.navigation-wrap .navbar {
     background-color: var(--navbar-background-color) !important;
 }
 .nav-item {
@@ -274,11 +279,11 @@ Start
     width: 25px;
     height: 25px;
   }
-  
+
   .dark #darkIcon {
     display: block;
   }
-  
+
   .light #lightIcon {
     display: block;
   }
