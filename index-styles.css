@@ -315,11 +315,11 @@ Start */
 
 .index-theme-testimonials {
   margin-top: 70px;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .index-theme-testimonials-header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "acumin-variable";
   font-size: 28px;
   padding-bottom: 42px;
 }
@@ -331,7 +331,7 @@ Start */
 }
 
 .index-theme-testimonials-subtitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "acumin-variable";
   font-size: 14px;
   color: #777c77;
 }
@@ -456,6 +456,77 @@ End
 End */
 
 
+/* Index Tree
+Begin */
+
+
+
+
+
+.index-tree {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  width: 100%;
+}
+
+.index-tree-subheader {
+  font-family: "acumin-variable";
+  font-size: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.index-tree-growth-emphasis {
+  color: var(--light-green-accent);
+  font-weight: bold;
+}
+
+.index-tree-header {
+  font-family: 'Playfair Display';
+  font-weight: 700 !important;
+  font-size: 100px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+}
+
+.index-tree-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tree-video {
+  height: 75%;
+  width: 75%;
+}
+
+#index-tree-desc {
+  margin-top: 40px;
+}
+
+.index-tree-text {
+  font-family: "acumin-variable";
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Index Tree
+End */
+
+
 /* Index Previous Issue 
 Start*/
 
@@ -490,23 +561,23 @@ Start*/
 }
 
 .index-previous-issue-subheader {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-}
-
-.index-previous-issue-link {
-  font-family: 'Montserrat', sans-serif;
-  padding-top: 21px;
+  font-family: "acumin-variable";
   font-size: 16px;
   display: flex;
   justify-content: center;
 }
 
-.index-previous-issue-emphasis {
+.index-previous-growth-emphasis {
   color: var(--dark-green-accent);
   font-weight: bold;
+}
+
+.index-previous-issue-link {
+  font-family: "acumin-variable";
+  padding-top: 21px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .index-previous-issue-link a{
@@ -524,14 +595,6 @@ Start */
 
 /* Makes the underline color change on hover
 End */
-
-.index-snippets-text {
-  border-top: 1px dashed var(--light-green-accent);
-  padding-top: 14px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-}
-
 
 /* Index Previous Issue
 End*/
@@ -587,13 +650,13 @@ Start*/
 }
 
 .index-snippets-subtitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "acumin-variable";
   font-size: 16px;
   color: #777c77;
 }
 
 .index-snippets-read-more {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "acumin-variable";
   padding-top: 21px;
   font-size: 16px;
 }
@@ -618,65 +681,15 @@ End */
   padding-top: 21px;
 }
 
-
-
+.index-snippets-text {
+  border-top: 1px dashed var(--light-green-accent);
+  padding-top: 14px;
+  font-family: "acumin-variable";
+  font-size: 16px;
+}
 
 /* Index Snippets 
 End*/
-
-/* Index Tree
-Begin */
-
-.index-tree {
-  
-  margin-top: 140px;
-  margin-bottom: 210px;
-  width: 100%;
-}
-
-.index-tree-subheader {
-  font-family: "acumin-variable";
-  font-size: 21px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.index-tree-header {
-  font-family: 'Playfair Display';
-  font-weight: 700 !important;
-  font-size: 100px;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.index-tree iframe {
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-}
-
-.index-tree-desc {
-  margin-top: 140px;
-  margin-bottom: 140px;
-}
-
-.index-tree-text {
-  font-family: "acumin-variable";
-  font-size: 16px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Index Tree
-End */
-
 
 /* Index Body Content 
 End */
