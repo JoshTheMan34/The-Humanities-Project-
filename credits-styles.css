@@ -1,0 +1,176 @@
+/* 
+Custom Variables
+Start
+*/
+:root {
+/*Color Variables*/
+--main-background-color: #FFFDF7;
+--test-background-color-previous-issue: #dad3d0;
+--alternate-background-color: #e7e3e0;
+--navbar-background-color: #e7e3e0;
+
+--magazine-cover: #367d78;
+--magazine-text-wrap: #e8c7a9;
+
+--dark-green-accent: #417058;
+--dark-green-accent-translucent: #4170588c;
+--light-green-accent: #87CDA1;
+--light-green-accent-translucent: #87cda177;
+--yellow-accent: #FDD57E;
+--pink-accent: #FFBCDF;
+
+--logo-color:
+
+
+
+/*Font Variables*/
+
+/* Font Styles */
+--title-font: 'Playfair Display'
+
+/* Font Colors */
+--font-color: #1D1B1A;
+--title-font-color: #FFFDF7;
+
+
+}
+
+/* 
+Custom Variables
+End
+*/
+
+/* Fonts Start */
+@font-face {
+    font-family: 'Deckard-Regular Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('DeckardRegular_1_.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Deckard Medium Evan';
+    font-style: normal;
+    font-weight: normal;
+    src: url('DeckardMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: "acumin-variable",sans-serif;
+    font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
+    src: url(https://fonts.adobe.com/fonts/acumin-variable#fonts-section);
+}
+
+@font-face {
+    font-family: 'minion-pro', serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.adobe.com/fonts/minion#fonts-section);
+}
+/* Fonts End*/
+
+/* Title Section
+Start */
+
+.credits-title-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.credits-title {
+    font-family: 'Playfair Display';
+    font-size: 100px !important;
+    font-weight: 700 !important;
+    letter-spacing: 7px;
+}
+
+.credits-subtitle {
+    font-family: 'Playfair Display';
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-decoration: underline wavy var(--light-green-accent);
+    text-underline-offset: 14px;
+
+}
+
+/* Title Section
+End */
+
+
+/* Credit Section
+Start */
+
+.credit-content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.credit-content-row {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.credit-content-right-header {
+    font-size: 5rem;
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Playfair Display';
+  
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+}
+
+.credit-content-left-desc {
+    border-right: 3px solid var(--light-green-accent);
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+
+.credit-content-left-header {
+    font-size: 5rem;
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Playfair Display';
+  
+    border-right: 3px solid var(--light-green-accent);
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+
+.credit-content-right-desc {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+}
+
+.credit-content-desc-text {
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: 'acumin-variable';
+}
+
+.credit-content-desc-text a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+/* Credit Section
+End */
