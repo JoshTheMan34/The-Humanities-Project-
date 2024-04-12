@@ -42,7 +42,7 @@ Start
 From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
 */
 .literature-intro-scroll-down {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     display: flex;
@@ -186,7 +186,7 @@ Literature Intro Layout
 Start
 */
 .literature-intro-layout {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     display: flex;
@@ -482,7 +482,7 @@ body {
 }
 
 .art-intro-search {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     text-align: left;

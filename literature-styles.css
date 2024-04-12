@@ -69,6 +69,7 @@ End
     src: url(https://fonts.adobe.com/fonts/minion#fonts-section);
 }
 /* Fonts End*/
+
 /* Home Page Figure and Figcaption */
 
 .txtover {
@@ -121,7 +122,7 @@ Start
 }
 
 .literature-intro-search {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     text-align: left;
@@ -229,7 +230,7 @@ Start
 From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
 */
 .literature-intro-scroll-down {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     display: flex;
@@ -374,7 +375,7 @@ Literature Intro Layout
 Start
 */
 .literature-intro-layout {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     display: flex;
@@ -392,11 +393,14 @@ Start
 
 .layout-link {
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--font-color);
 }
 .layout-link.active {
-    border-bottom: 1px solid;
-    border-color: var(--light-green-accent);
+  text-decoration: underline;
+  text-decoration-color: var(--dark-green-accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
 }
 /* 
 Layout Items 
@@ -514,7 +518,7 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
 }
 
 .literature-pieces-author{
-    font-family: 'Playfair Display';
+    font-family: 'minion-pro';
     font-size: 14px;
     font-weight: 500 !important;
 
@@ -530,6 +534,7 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
 
 .literature-pieces-link {
   padding-top: 20px;
+  font-family: 'minion-pro';
   font-size: 14px;
   font-weight: 500 !important;
 }
@@ -575,13 +580,13 @@ Start
 }
 
 .literature-pieces-list-title {
-  font-family: var(--title-font);
+  font-family: 'Playfair Design';
   font-size: 24px !important;
   font-weight: 500 !important;
 }
 
 .literature-pieces-list-author {
-  font-family: var(--title-font);
+  font-family: 'minion-pro';
   font-size: 14px;
   font-weight: 500 !important;
 }
@@ -593,6 +598,7 @@ Start
 }
 
 .literature-pieces-list-link {
+  font-family: 'minion-pro';
   font-size: 14px;
   font-weight: 500 !important;
 }
@@ -708,6 +714,7 @@ Start
 }
 
 .work-link {
+  font-family: 'minion-pro';
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -719,6 +726,7 @@ Start
 }
 
 .work-title {
+  font-family: 'minion-pro';
   font-size: 3rem;
   line-height: 1.2;
 }
@@ -727,13 +735,13 @@ Start
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
 
 }
 
 .work-text {
   font-weight: 400;
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
 }
 .work-dot-space {
   display: flex;
@@ -776,14 +784,14 @@ Start
   line-height: 1.2;
   font-weight: 300;
 
-  font-family: "Playfair Display";
+  font-family: 'minion-pro';
 }
 
 .work-short-author {
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.5;
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
 
 }
 
@@ -803,7 +811,7 @@ Start
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 300;
-  font-family: "Playfair Display";
+  font-family: 'minion-pro';
 
   display: flex;
   justify-content: center;

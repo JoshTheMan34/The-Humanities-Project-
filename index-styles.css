@@ -133,9 +133,10 @@ Start */
 }
 
 .index-intro-header {
-    font-family: 'Playfair Display';
+    font-family: 'minion-pro';
     font-size: 50px !important;
     font-weight: 700 !important;
+    letter-spacing: 1px;
     text-align: left;
 }
 .index-intro-subheader {
@@ -148,17 +149,18 @@ Start */
     text-align: right;
 }
 .index-intro-quote-title {
-    font-family: 'Playfair Display';
+    font-family: 'minion-pro';
     font-weight: 700 !important;
 }
 .index-intro-quote-subtitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'minion-pro';
     font-size: 14px;
     color: #777c77;
 }
 .index-intro-quote-text {
+    font-family: 'minion-pro';
     font-style: italic;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-size: 16px;
 }
 
@@ -268,7 +270,7 @@ End */
 }
 
 .index-theme-subheader {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'minion-pro';
   font-size: 21px;
   color: var(--light-green-accent);
 }
@@ -281,7 +283,7 @@ End */
 
 .index-theme-emphasis {
   color: var(--light-green-accent);
-  font-family: 'Playfair Display';
+  font-family: 'minion-pro';
   font-weight: bold;
 }
 
@@ -319,7 +321,7 @@ Start */
 }
 
 .index-theme-testimonials-header {
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
   font-size: 28px;
   padding-bottom: 42px;
 }
@@ -331,7 +333,7 @@ Start */
 }
 
 .index-theme-testimonials-subtitle {
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
   font-size: 14px;
   color: #777c77;
 }
@@ -340,7 +342,7 @@ Start */
   border-top: 1px dashed var(--light-green-accent);
   padding-top: 14px;
   font-style: italic;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'minion-pro';
   font-size: 16px;
 }
 
@@ -470,9 +472,8 @@ Begin */
 }
 
 .index-tree-subheader {
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
   font-size: 32px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -514,7 +515,7 @@ Begin */
 }
 
 .index-tree-text {
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
   font-size: 16px;
 
   display: flex;
@@ -561,7 +562,7 @@ Start*/
 }
 
 .index-previous-issue-subheader {
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
   font-size: 16px;
   display: flex;
   justify-content: center;
@@ -573,7 +574,7 @@ Start*/
 }
 
 .index-previous-issue-link {
-  font-family: "acumin-variable";
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding-top: 21px;
   font-size: 16px;
   display: flex;
@@ -644,19 +645,19 @@ Start*/
 }
 
 .index-snippets-title {
-  font-family: 'Playfair Display';
+  font-family: 'minion-pro';
   font-weight: 700 !important;
   font-size: 32px;
 }
 
 .index-snippets-subtitle {
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
   font-size: 16px;
   color: #777c77;
 }
 
 .index-snippets-read-more {
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
   padding-top: 21px;
   font-size: 16px;
 }
@@ -684,7 +685,7 @@ End */
 .index-snippets-text {
   border-top: 1px dashed var(--light-green-accent);
   padding-top: 14px;
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
   font-size: 16px;
 }
 

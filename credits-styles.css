@@ -117,6 +117,12 @@ Start */
     text-align: right;
 }
 
+.credits-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*
 Search Bar
 Start
@@ -126,9 +132,6 @@ From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
 .search-container {
     width: 490px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
   
   #search-input-wrapper {
@@ -275,7 +278,7 @@ Start */
 
     font-size: 1.4rem;
     font-weight: 300;
-    font-family: 'acumin-variable';
+    font-family: 'minion-pro';
 }
 
 .credit-content-desc-text a {
@@ -283,5 +286,18 @@ Start */
     color: var(--font-color);
 }
 
+/* Credits Final Message Section 
+Start */
+
+.credits-final-message {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* Credits Final Message Section 
+End */
+
 /* Credit Section
 End */
+
+

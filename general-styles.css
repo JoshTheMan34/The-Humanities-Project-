@@ -32,6 +32,36 @@ Start*/
   /* Custom Variables
   End*/
 
+/* Fonts Start */
+@font-face {
+    font-family: 'Deckard-Regular Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('DeckardRegular_1_.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Deckard Medium Evan';
+    font-style: normal;
+    font-weight: normal;
+    src: url('DeckardMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: "acumin-variable",sans-serif;
+    font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
+    src: url(https://fonts.adobe.com/fonts/acumin-variable#fonts-section);
+}
+
+@font-face {
+    font-family: 'minion-pro', serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.adobe.com/fonts/minion#fonts-section);
+}
+/* Fonts End*/
+
 
 
 /* Custom Scroll Bar Start
@@ -134,10 +164,21 @@ Start */
     flex-grow: 0;
 }
 
+@media(max-width: 992px) {
+    .navbar-nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
 nav a {
-    font-family: 'Playfair Display';
+    font-family: 'minion-pro';
     font-size: 20px !important;
-    font-weight: 700 !important;
     color: var(--font-color) !important;
 }
 
@@ -339,6 +380,8 @@ Start */
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    font-family: 'minion-pro';
 }
 .footer-header {
     font-family: 'Playfair Display';
@@ -404,6 +447,8 @@ Start
     padding:5px 0px;
 }
 .footer-bs .footer-nav ul.pages a { 
+    font-family: 'minion-pro';
+    font-size: 16px;
     color:var(--font-color); 
     font-weight:bold; 
     text-decoration: none;
@@ -425,6 +470,8 @@ Start
     padding:5px 0px;
 }
 .footer-bs .footer-nav ul.list a { 
+    font-family: 'minion-pro';
+    font-size: 16px;
     color:var(--font-color);
     text-decoration: none;
 }
@@ -446,6 +493,8 @@ Start
 }
 .footer-bs .footer-social a { 
     color:var(--font-color);
+    font-family: 'minion-pro';
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
 }
