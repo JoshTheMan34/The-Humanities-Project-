@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Carousel in Modal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add your custom CSS styles here */
+        .modal-dialog {
+            max-width: 90%;
+        }
+
+        .carousel-item img {
+            max-height: 300px;
+            /* Adjust image height as needed */
+            width: auto;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Button trigger modal -->
+    <a data-bs-toggle="modal" data-bs-target="#*^*Modal">
+        <div class="card">
+            <div class="card-body">
+                <p>
+                    shawn likes drak haired grils
+                    shaun loves asians specifically xianyun and especially Megan Fox (2009 - Johnny likes her too)
+                </p>
+            </div>
+        </div>
+    </a>
+    <div class="modal fade" id="*^*Modal" tabindex="-1" aria-labelledby="*^*ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/800x400?text=Slide+1" class="d-block w-100"
+                                    alt="Slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/800x400?text=Slide+2" class="d-block w-100"
+                                    alt="Slide 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/800x400?text=Slide+3" class="d-block w-100"
+                                    alt="Slide 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 my-2 text-center">
+        <div class="col">
+            <div class="card card-gums text-center h-100 mx-4 px-4 py-2 my-2">
+                <a data-bs-toggle="modal" data-bs-target="#*^*Modal">
+                    <img src="/img/artcolor.jpg" class="card-img-top" alt="*^* Gum">
+                </a>
+                <hr>
+                <div class="card-body">
+                    <a data-bs-toggle="modal" data-bs-target="#*^*Modal">
+                        <h5 class="card-title">
+                            *^* Gum
+                        </h5>
+                    </a>
+                  
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-gums text-center h-100 mx-4 px-4 py-2 my-2">
+                <a data-bs-toggle="modal" data-bs-target="#*^*Modal">
+                    <img src="/img/artcolor.jpg" class="card-img-top" alt="*^* Gum">
+                </a>
+                <hr>
+                <div class="card-body">
+                    <a data-bs-toggle="modal" data-bs-target="#*^*Modal">
+                        <h5 class="card-title">
+                            *^* Gum
+                        </h5>
+                    </a>
+                  
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-gums text-center h-100 mx-4 px-4 py-2 my-2">
+                <a data-bs-toggle="modal" data-bs-target="#*^*Modal">
+                    <img src="/img/artcolor.jpg" class="card-img-top" alt="*^* Gum">
+                </a>
+                <hr>
+                <div class="card-body">
+                    <a data-bs-toggle="modal" data-bs-target="#*^*Modal">
+                        <h5 class="card-title">
+                            *^* Gum
+                        </h5>
+                    </a>
+                  
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-gums text-center h-100 mx-4 px-4 py-2 my-2">
+                <a data-bs-toggle="modal" data-bs-target="#*^*Modal">
+                    <img src="/img/artcolor.jpg" class="card-img-top" alt="*^* Gum">
+                </a>
+                <hr>
+                <div class="card-body">
+                    <a data-bs-toggle="modal" data-bs-target="#*^*Modal">
+                        <h5 class="card-title">
+                            *^* Gum
+                        </h5>
+                    </a>
+                  
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

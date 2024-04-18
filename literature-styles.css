@@ -9,6 +9,9 @@ Start
   --alternate-background-color: #e7e3e0;
   --navbar-background-color: #e7e3e0;
 
+  --magazine-cover: #367d78;
+  --magazine-text-wrap: #e8c7a9;
+
   --dark-green-accent: #417058;
   --dark-green-accent-translucent: #4170588c;
   --light-green-accent: #87CDA1;
@@ -31,7 +34,7 @@ Start
 
 
 }
-  
+
 /* 
 Custom Variables
 End
@@ -44,7 +47,7 @@ End
     font-weight: normal;
     src: url('DeckardRegular_1_.woff') format('woff');
 }
-    
+
 
 @font-face {
     font-family: 'Deckard Medium Evan';
@@ -66,6 +69,7 @@ End
     src: url(https://fonts.adobe.com/fonts/minion#fonts-section);
 }
 /* Fonts End*/
+
 /* Home Page Figure and Figcaption */
 
 .txtover {
@@ -80,7 +84,7 @@ End
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   .txtover figcaption {
     position: absolute;
     top: 50%;
@@ -96,7 +100,7 @@ End
     letter-spacing: 7px;
 
     text-shadow: 1px 1px 21px rgb(58, 58, 58);
-  
+
   }
 
   @media (max-width: 768px) {
@@ -118,7 +122,7 @@ Start
 }
 
 .literature-intro-search {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     text-align: left;
@@ -197,7 +201,7 @@ From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
   background: transparent;
   position: absolute;
   right: 0;
-  
+
 }
 
 .search-container button:focus {
@@ -226,7 +230,7 @@ Start
 From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
 */
 .literature-intro-scroll-down {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     display: flex;
@@ -309,7 +313,7 @@ From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
    animation: animated-mouse 1.2s ease infinite;
     -moz-animation: mouse-animated 1.2s ease infinite;
   }
-  
+
   @-webkit-keyframes animated-mouse {
     0% {
       opacity: 1;
@@ -371,7 +375,7 @@ Literature Intro Layout
 Start
 */
 .literature-intro-layout {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     display: flex;
@@ -389,11 +393,14 @@ Start
 
 .layout-link {
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--font-color);
 }
 .layout-link.active {
-    border-bottom: 1px solid;
-    border-color: var(--light-green-accent);
+  text-decoration: underline;
+  text-decoration-color: var(--dark-green-accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
 }
 /* 
 Layout Items 
@@ -473,7 +480,7 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
     padding-left: 25px;
     padding-right: 25px;
 
-    background: #e6e0dc;
+    background: var(--magazine-cover);
 
     display: flex;
     flex: 1 1 auto;
@@ -487,6 +494,7 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
     font-family: 'Playfair Display';
     font-size: 24px !important;
     font-weight: 500 !important;
+    color: #ffede1;
     margin-top: 5%;
 
 }
@@ -510,12 +518,13 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
 }
 
 .literature-pieces-author{
-    font-family: 'Playfair Display';
+    font-family: 'minion-pro';
     font-size: 14px;
     font-weight: 500 !important;
 
-    background: #e1cac2;
+    background: var(--magazine-text-wrap);
 
+    color: #3c271d;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
@@ -525,6 +534,7 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
 
 .literature-pieces-link {
   padding-top: 20px;
+  font-family: 'minion-pro';
   font-size: 14px;
   font-weight: 500 !important;
 }
@@ -570,13 +580,13 @@ Start
 }
 
 .literature-pieces-list-title {
-  font-family: var(--title-font);
+  font-family: 'Playfair Design';
   font-size: 24px !important;
   font-weight: 500 !important;
 }
 
 .literature-pieces-list-author {
-  font-family: var(--title-font);
+  font-family: 'minion-pro';
   font-size: 14px;
   font-weight: 500 !important;
 }
@@ -588,6 +598,7 @@ Start
 }
 
 .literature-pieces-list-link {
+  font-family: 'minion-pro';
   font-size: 14px;
   font-weight: 500 !important;
 }
@@ -640,14 +651,14 @@ End
   position: absolute;
   top: 0;
   left: 0;
-  background: #dcd6d2;
+  background: #2f6f6c;
   /*
   background-image: url("img/test-photos/photo-1524401597352-ec4463663233.jpg");
   background-size: cover;
   */
   height: 100%;
   width: 60px;
-  
+
   transform-style: preserve-3d;
   transform-origin: 0% 50%;
   transform: rotate3d(0, 1, 0, -86deg) translate3d(-100%, 0, 0);
@@ -658,7 +669,7 @@ End
   bottom:0;
   left: 0;
   height: 41px;
-  background: #d8c1b7;
+  background: #d8b89a;
   width: 100%;
 }
 
@@ -677,7 +688,7 @@ Start
 
 .work-content {
   padding-top: 7rem;
-  
+
 }
 
 .work-content-body {
@@ -703,6 +714,7 @@ Start
 }
 
 .work-link {
+  font-family: 'minion-pro';
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -714,6 +726,7 @@ Start
 }
 
 .work-title {
+  font-family: 'minion-pro';
   font-size: 3rem;
   line-height: 1.2;
 }
@@ -722,11 +735,13 @@ Start
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
+  font-family: 'minion-pro';
+
 }
 
 .work-text {
   font-weight: 400;
-  font-family: "acumin-variable";
+  font-family: 'minion-pro';
 }
 .work-dot-space {
   display: flex;
@@ -756,18 +771,28 @@ Start
 Specific work-short styling
 Start
 */
+@media (max-width: 768px) {
+  .work-short-content-body {
+    display: flex !important;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+}
 .work-short-title {
   font-size: 5rem;
   line-height: 1.2;
   font-weight: 300;
 
-  font-family: "Playfair Display";
+  font-family: 'minion-pro';
 }
 
 .work-short-author {
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.5;
+  font-family: 'minion-pro';
+
 }
 
 .work-short-content-body {
@@ -786,7 +811,13 @@ Start
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 300;
-  font-family: "Playfair Display";
+  font-family: 'minion-pro';
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
 }
 /*
 Specific work-long styling

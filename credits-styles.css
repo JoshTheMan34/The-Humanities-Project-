@@ -1,0 +1,303 @@
+/* 
+Custom Variables
+Start
+*/
+:root {
+/*Color Variables*/
+--main-background-color: #FFFDF7;
+--test-background-color-previous-issue: #dad3d0;
+--alternate-background-color: #e7e3e0;
+--navbar-background-color: #e7e3e0;
+
+--magazine-cover: #367d78;
+--magazine-text-wrap: #e8c7a9;
+
+--dark-green-accent: #417058;
+--dark-green-accent-translucent: #4170588c;
+--light-green-accent: #87CDA1;
+--light-green-accent-translucent: #87cda177;
+--yellow-accent: #FDD57E;
+--pink-accent: #FFBCDF;
+
+--logo-color:
+
+
+
+/*Font Variables*/
+
+/* Font Styles */
+--title-font: 'Playfair Display'
+
+/* Font Colors */
+--font-color: #1D1B1A;
+--title-font-color: #FFFDF7;
+
+
+}
+
+/* 
+Custom Variables
+End
+*/
+
+/* Fonts Start */
+@font-face {
+    font-family: 'Deckard-Regular Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('DeckardRegular_1_.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Deckard Medium Evan';
+    font-style: normal;
+    font-weight: normal;
+    src: url('DeckardMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: "acumin-variable",sans-serif;
+    font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
+    src: url(https://fonts.adobe.com/fonts/acumin-variable#fonts-section);
+}
+
+@font-face {
+    font-family: 'minion-pro', serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.adobe.com/fonts/minion#fonts-section);
+}
+/* Fonts End*/
+
+/* Title Section
+Start */
+
+.credits-title-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.credits-title {
+    font-family: 'Playfair Display';
+    font-size: 100px !important;
+    font-weight: 700 !important;
+    letter-spacing: 7px;
+}
+
+/* Title Section
+End */
+
+
+/* Sub-Title Section
+Start */
+
+.credits-subtitle-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.credits-subtitle {
+    font-family: 'Playfair Display';
+    font-size: 21px !important;
+    font-weight: 700 !important;
+
+    text-decoration: underline wavy var(--light-green-accent);
+    text-underline-offset: 21px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    text-align: right;
+}
+
+.credits-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+Search Bar
+Start
+From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
+*/
+
+.search-container {
+    width: 490px;
+    margin: 0 auto;
+  }
+  
+  #search-input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  #search-input {
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #d0cfce;
+    flex-grow: 2;
+  
+    /*
+    From Codepen: https://codepen.io/noahbres/pen/MXLBPJ
+    Start
+    */
+    border-radius: 10em;
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 
+    0px 3px 4px 0px rgba(0,0,0,0.14), 
+    0px 1px 8px 0px rgba(0,0,0,0.12) !important;
+    /*
+    From Codepen: https://codepen.io/noahbres/pen/MXLBPJ
+    End
+    */  
+  
+    outline: none;
+    background-color: transparent;
+  }
+  
+  #search-input:focus {
+    border: 1px solid var(--light-green-accent);
+    transition: 0.35s ease;
+    color: var(--light-green-accent);
+  }
+  
+  #search-input:focus::-webkit-input-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+  }
+  
+  #search-input:focus::-moz-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+  }
+  
+  #search-input:focus:-ms-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+  }
+  
+  .search-container button {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+  
+  }
+  
+  .search-container button:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .search-container button:focus {
+    outline: none !important;
+  }
+  
+  .search-icon {
+    width: 55px;
+    height: 55px;
+  }
+  
+  
+  /*
+  Search Bar
+  End
+  From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
+  */
+
+/* Sub-Title Section
+End */
+
+/* Credit Section
+Start */
+
+.credit-content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.credit-content-row {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.credit-content-right-header {
+    font-size: 5rem;
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Playfair Display';
+  
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+}
+
+.credit-content-left-desc {
+    border-right: 3px solid var(--light-green-accent);
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+
+.credit-content-left-header {
+    font-size: 5rem;
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Playfair Display';
+  
+    border-right: 3px solid var(--light-green-accent);
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+
+.credit-content-right-desc {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+}
+
+.credit-content-desc-text {
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: 'minion-pro';
+}
+
+.credit-content-desc-text a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+/* Credits Final Message Section 
+Start */
+
+.credits-final-message {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* Credits Final Message Section 
+End */
+
+/* Credit Section
+End */
+
+

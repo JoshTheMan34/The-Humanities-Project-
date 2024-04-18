@@ -19,6 +19,37 @@ Start*/
   --pink-accent: #FFBCDF;
 
 }
+
+/* Fonts Start */
+@font-face {
+  font-family: 'Deckard-Regular Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('DeckardRegular_1_.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Deckard Medium Evan';
+  font-style: normal;
+  font-weight: normal;
+  src: url('DeckardMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: "acumin-variable",sans-serif;
+  font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
+  src: url(https://fonts.adobe.com/fonts/acumin-variable#fonts-section);
+}
+
+@font-face {
+  font-family: 'minion-pro', serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.adobe.com/fonts/minion#fonts-section);
+}
+/* Fonts End*/
+
 /* Custom Variables
 End*/
 
@@ -102,9 +133,10 @@ Start */
 }
 
 .index-intro-header {
-    font-family: 'Playfair Display';
+    font-family: 'minion-pro';
     font-size: 50px !important;
     font-weight: 700 !important;
+    letter-spacing: 1px;
     text-align: left;
 }
 .index-intro-subheader {
@@ -117,17 +149,18 @@ Start */
     text-align: right;
 }
 .index-intro-quote-title {
-    font-family: 'Playfair Display';
+    font-family: 'minion-pro';
     font-weight: 700 !important;
 }
 .index-intro-quote-subtitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'minion-pro';
     font-size: 14px;
     color: #777c77;
 }
 .index-intro-quote-text {
+    font-family: 'minion-pro';
     font-style: italic;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-size: 16px;
 }
 
@@ -223,12 +256,6 @@ End */
 
 /* Index Theme
  Start */
- 
-/* Growing Vines
-Start */
-
-/* Growing Vines
-End */
 
 .index-theme {
   margin-top: 140px;
@@ -243,7 +270,7 @@ End */
 }
 
 .index-theme-subheader {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'minion-pro';
   font-size: 21px;
   color: var(--light-green-accent);
 }
@@ -256,7 +283,7 @@ End */
 
 .index-theme-emphasis {
   color: var(--light-green-accent);
-  font-family: 'Playfair Display';
+  font-family: 'minion-pro';
   font-weight: bold;
 }
 
@@ -290,11 +317,11 @@ Start */
 
 .index-theme-testimonials {
   margin-top: 70px;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .index-theme-testimonials-header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'minion-pro';
   font-size: 28px;
   padding-bottom: 42px;
 }
@@ -306,7 +333,7 @@ Start */
 }
 
 .index-theme-testimonials-subtitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'minion-pro';
   font-size: 14px;
   color: #777c77;
 }
@@ -315,7 +342,7 @@ Start */
   border-top: 1px dashed var(--light-green-accent);
   padding-top: 14px;
   font-style: italic;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'minion-pro';
   font-size: 16px;
 }
 
@@ -431,6 +458,76 @@ End
 End */
 
 
+/* Index Tree
+Begin */
+
+
+
+
+
+.index-tree {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  width: 100%;
+}
+
+.index-tree-subheader {
+  font-family: 'minion-pro';
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.index-tree-growth-emphasis {
+  color: var(--light-green-accent);
+  font-weight: bold;
+}
+
+.index-tree-header {
+  font-family: 'Playfair Display';
+  font-weight: 700 !important;
+  font-size: 100px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+}
+
+.index-tree-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tree-video {
+  height: 75%;
+  width: 75%;
+}
+
+#index-tree-desc {
+  margin-top: 40px;
+}
+
+.index-tree-text {
+  font-family: 'minion-pro';
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Index Tree
+End */
+
+
 /* Index Previous Issue 
 Start*/
 
@@ -465,23 +562,23 @@ Start*/
 }
 
 .index-previous-issue-subheader {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-}
-
-.index-previous-issue-link {
-  font-family: 'Montserrat', sans-serif;
-  padding-top: 21px;
+  font-family: 'minion-pro';
   font-size: 16px;
   display: flex;
   justify-content: center;
 }
 
-.index-previous-issue-emphasis {
+.index-previous-growth-emphasis {
   color: var(--dark-green-accent);
   font-weight: bold;
+}
+
+.index-previous-issue-link {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 21px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .index-previous-issue-link a{
@@ -499,14 +596,6 @@ Start */
 
 /* Makes the underline color change on hover
 End */
-
-.index-snippets-text {
-  border-top: 1px dashed var(--light-green-accent);
-  padding-top: 14px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-}
-
 
 /* Index Previous Issue
 End*/
@@ -556,19 +645,19 @@ Start*/
 }
 
 .index-snippets-title {
-  font-family: 'Playfair Display';
+  font-family: 'minion-pro';
   font-weight: 700 !important;
   font-size: 32px;
 }
 
 .index-snippets-subtitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'minion-pro';
   font-size: 16px;
   color: #777c77;
 }
 
 .index-snippets-read-more {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'minion-pro';
   padding-top: 21px;
   font-size: 16px;
 }
@@ -589,23 +678,19 @@ Start */
 /* Makes the underline color change on hover
 End */
 
-.index-snippets-text-section {
+.index-snippets-text-subheader {
   padding-top: 21px;
 }
 
 .index-snippets-text {
   border-top: 1px dashed var(--light-green-accent);
   padding-top: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'minion-pro';
   font-size: 16px;
 }
 
-
 /* Index Snippets 
 End*/
-
-
-
 
 /* Index Body Content 
 End */

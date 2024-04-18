@@ -42,7 +42,7 @@ Start
 From Codepen: https://codepen.io/josedavidfumo/details/KVGejW
 */
 .literature-intro-scroll-down {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     display: flex;
@@ -186,7 +186,7 @@ Literature Intro Layout
 Start
 */
 .literature-intro-layout {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     display: flex;
@@ -248,7 +248,7 @@ End
     z-index: 3;
     margin: auto;
     display: block;
-    width: 80%;
+    width: 100%;
     max-width: 700px;
 }
 
@@ -482,7 +482,7 @@ body {
 }
 
 .art-intro-search {
-    font-family: 'Deckard Medium Evan';
+    font-family: 'minion-pro';
     font-size: 16px !important;
     font-weight: 500 !important;
     text-align: left;
@@ -491,6 +491,10 @@ body {
     align-items: center;
 }
 
+.art-image{
+  width: fit-content;
+  height: 100px;
+}
 /*
 Search Bar
 Start
@@ -621,7 +625,7 @@ From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
     right: 30px;
     cursor: pointer;
   }
-  
+       
   .close:hover {
     color: #ccc;
   }
@@ -631,3 +635,7 @@ From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
     margin: 20px;
   }
   
+  .card {
+    align-items: center;  
+    margin: fill;
+  }
