@@ -219,79 +219,6 @@ End
 
 
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.gallery img {
-    width: 200px;
-    height: 150px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 3;
-    padding-top: 10%;
-    left: auto;
-    top: auto;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.8);
-}
-.modal-content {
-    z-index: 3;
-    margin: auto;
-    display: block;
-    width: 100%;
-    max-width: 700px;
-}
-
-.close-modal{
-    z-index: -1;
-  }
-.modal img {
-    width:fit-content;
-    height: 600px;
-}
-.modal-close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    z-index: 3;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
 
 
 
@@ -591,51 +518,36 @@ From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
 
 
 
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  .modal .carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .carousel-item {
-    max-width: 80%;
-    max-height: 80%;
-    object-fit: contain;
-  }
-  
-  .close {
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    cursor: pointer;
-  }
-       
-  .close:hover {
-    color: #ccc;
-  }
-  
-  button {
-    padding: 10px 20px;
-    margin: 20px;
-  }
-  
-  .card {
-    align-items: center;  
-    margin: fill;
-  }
+/*Modal Carousel beginning*/
+
+.img-size {
+  /* 	padding: 0;
+      margin: 0; */
+  height: 450px;
+  width: 700px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.modal-content {
+  width: 700px;
+  border: none;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 48px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 48px;
+}
+
+/*Modal Carousel end*/
