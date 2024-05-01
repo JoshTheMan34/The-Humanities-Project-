@@ -1,3 +1,75 @@
+/* 
+Custom Variables
+Start
+*/
+:root {
+  /*Color Variables*/
+  --main-background-color: #FFFDF7;
+  --test-background-color-previous-issue: #dad3d0;
+  --alternate-background-color: #e7e3e0;
+  --navbar-background-color: #e7e3e0;
+  
+  --magazine-cover: #367d78;
+  --magazine-text-wrap: #e8c7a9;
+  
+  --dark-green-accent: #417058;
+  --dark-green-accent-translucent: #4170588c;
+  --light-green-accent: #87CDA1;
+  --light-green-accent-translucent: #87cda177;
+  --yellow-accent: #FDD57E;
+  --pink-accent: #FFBCDF;
+  
+  --logo-color:
+  
+  
+  
+  /*Font Variables*/
+  
+  /* Font Styles */
+  --title-font: 'Playfair Display'
+  
+  /* Font Colors */
+  --font-color: #1D1B1A;
+  --title-font-color: #FFFDF7;
+  
+  
+  }
+  
+  /* 
+  Custom Variables
+  End
+  */
+  
+  /* Fonts Start */
+  @font-face {
+      font-family: 'Deckard-Regular Regular';
+      font-style: normal;
+      font-weight: normal;
+      src: url('DeckardRegular_1_.woff') format('woff');
+  }
+  
+  
+  @font-face {
+      font-family: 'Deckard Medium Evan';
+      font-style: normal;
+      font-weight: normal;
+      src: url('DeckardMedium.woff') format('woff');
+  }
+  
+  @font-face {
+      font-family: "acumin-variable",sans-serif;
+      font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
+      src: url(https://fonts.adobe.com/fonts/acumin-variable#fonts-section);
+  }
+  
+  @font-face {
+      font-family: 'minion-pro', serif;
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.adobe.com/fonts/minion#fonts-section);
+  }
+  /* Fonts End*/
+
 /*button of dreams*/
 .hidden {
   display: none;
@@ -148,24 +220,9 @@ ul {
 }
 
 nav {
-  position: relative;
-  padding: 1.25rem 0 1.25rem 0;
-
   ul {
     display: flex;
     justify-content: flex-start;
-
-    li {
-      font-size: 0.875rem;
-      font-weight: 700;
-      letter-spacing: 0.125rem;
-      text-transform: uppercase;
-      margin: 0 1.5rem 0 0;
-
-      &:nth-child(3) {
-        margin: 0;
-      }
-    }
   }
 }
 
