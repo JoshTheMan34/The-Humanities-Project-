@@ -139,6 +139,12 @@ Start */
     letter-spacing: 1px;
     text-align: left;
 }
+
+@media (max-width: 768px) {
+  .index-intro-header {
+    text-align: center;
+  }
+}
 .index-intro-subheader {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px !important;
@@ -326,6 +332,12 @@ Start */
   padding-bottom: 42px;
 }
 
+@media (max-width: 768px) {
+  .index-theme-testimonials-header {
+    text-align: center;
+  }
+}
+
 .index-theme-testimonials-title {
   font-family: 'Playfair Display';
   font-weight: 700 !important;
@@ -480,6 +492,12 @@ Begin */
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .index-tree-subheader {
+    padding-top: 44px;
+  }
+}
+
 .index-tree-growth-emphasis {
   color: var(--light-green-accent);
   font-weight: bold;
@@ -564,8 +582,16 @@ Start*/
 .index-previous-issue-subheader {
   font-family: 'minion-pro';
   font-size: 16px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .index-previous-issue-header {
+    text-align: center;
+  }
+  .index-previous-issue-subheader {
+    padding-top: 28px;
+  }
 }
 
 .index-previous-growth-emphasis {
@@ -689,6 +715,11 @@ End */
   font-size: 16px;
 }
 
+@media (max-width: 768px) {
+  .index-snippets-text {
+    margin-top: 28px;
+  }
+}
 /* Index Snippets 
 End*/
 

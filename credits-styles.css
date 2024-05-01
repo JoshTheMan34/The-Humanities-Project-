@@ -97,24 +97,9 @@ End */
 /* Sub-Title Section
 Start */
 
-.credits-subtitle-section {
+.credits-search-section {
     padding-top: 40px;
     padding-bottom: 40px;
-}
-
-.credits-subtitle {
-    font-family: 'Playfair Display';
-    font-size: 21px !important;
-    font-weight: 700 !important;
-
-    text-decoration: underline wavy var(--light-green-accent);
-    text-underline-offset: 21px;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: right;
-    text-align: right;
 }
 
 .credits-search {
@@ -286,12 +271,66 @@ Start */
     color: var(--font-color);
 }
 
+@media (max-width: 768px) {
+  .credit-content-left-header {
+    justify-content: center;
+    text-align: center;
+
+    border-right: none;
+
+  }
+  .credit-content-right-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .credit-content-left-desc {
+    justify-content: center;
+    text-align: center;
+
+    border-right: none;
+  }
+  .credit-content-right-desc {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 /* Credits Final Message Section 
 Start */
 
-.credits-final-message {
+.credits-final-message-section {
   padding-top: 70px;
   padding-bottom: 70px;
+}
+
+.credits-final-message {
+  font-family: 'minion-pro';
+  font-size: 21px !important;
+
+  text-decoration: underline wavy var(--light-green-accent);
+  text-underline-offset: 21px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .credit-content {
+    padding-bottom: 11px;
+  }
+  .credits-final-message-section {
+    padding-top: 10px;
+  }
+  .credits-final-message {
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+  }
 }
 
 /* Credits Final Message Section 
