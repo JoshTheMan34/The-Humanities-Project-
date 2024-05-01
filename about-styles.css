@@ -220,6 +220,7 @@ ul {
 }
 
 nav {
+  color: var(--font-color);
   ul {
     display: flex;
     justify-content: flex-start;

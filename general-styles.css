@@ -643,7 +643,7 @@ Start
     text-align: center;
     line-height: 46px;
     font-size: 24px;
-    color: black;
+    color: var(--font-color);
     left: 0;
     top: 0;
     height: 46px;
@@ -690,7 +690,7 @@ Start
   }
   
   .progress-wrap svg.progress-circle path {
-    stroke: black;
+    stroke: var(--font-color);
     stroke-width: 4;
     box-sizing:border-box;
     -webkit-transition: all 200ms linear;
