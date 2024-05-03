@@ -530,7 +530,8 @@ From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
 }
 
 .modal-content {
-  width: 700px;
+  width: 500px;
+  height: auto;
   border: none;
 }
 
