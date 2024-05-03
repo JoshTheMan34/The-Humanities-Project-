@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to CSS Files Start -->
+    <!-- CSS for all Pages--> <link rel="stylesheet" href="../general-styles.css">
+    <!-- Literature Page Specific CSS--> <link rel="stylesheet" href="../literature-styles.css">
+    <!-- Link to CSS Files End -->
+
+    <!-- Tab Icon Start -->
+    <link rel="shortcut icon" href="../img/The Magnet Logos/full_color_magnet_logo.png">
+    <!-- Tab Icon End -->
+
+    <!-- Fonts Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font's End -->
+
+    <!-- Font Awesome (Used for Icons) Start -->
+    <script src="https://kit.fontawesome.com/b58d49b83c.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome (Used for Icons) End -->
+
+    <!-- External Javascript File for Lazy Loading Images Start-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <!-- External Javascript File for Lazy Loading Images End-->
+
+    <!-- JQuery Start --> 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- JQuery End-->
+
+    <!-- Bootstrap Start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Bootstrap End -->
+
+    <title>My Little Pink Eraser, by Lilly Chattin</title>
+</head>
+<body>
+
+    <!--Navbar code Start-->
+    <section class="navbar-section">
+        <div class="navigation-wrap  start-header start-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg ">
+                            <div class="container-fluid">
+                            <a class="navbar-brand" href="../index.html"><img class="nav-header-img" src="../img/The Magnet Logos/black transparent_magnet_logo.png"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../art.html">Art</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="../literature.html">Literature</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../media.html">Media</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../credits.html">Credits</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../about.html">About Us</a>
+                                </li>
+                                <li class="themeButton tb-nav-inside">
+                                    <a href="#" class="nav-link link-text">
+                                        <svg
+                                        class="theme-icon"
+                                        id="lightIcon"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        data-prefix="fad"
+                                        data-icon="moon-stars"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                        class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x"
+                                        >
+                                        <g class="fa-group">
+                                            <path
+                                            fill="currentColor"
+                                            d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7 149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208z"
+                                            class="fa-secondary"
+                                            ></path>
+                                            <path
+                                            fill="currentColor"
+                                            d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0 1-149 71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2 1.6 10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4 165.4 178.5 147.7z"
+                                            class="fa-primary"
+                                            ></path>
+                                        </g>
+                                        </svg>
+                                        <svg
+                                        class="theme-icon"
+                                        id="darkIcon"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                        data-prefix="fad"
+                                        data-icon="sun"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                        class="svg-inline--fa fa-sun fa-w-16 fa-7x"
+                                        >
+                                        <g class="fa-group">
+                                            <path
+                                            fill="currentColor"
+                                            d="M502.42 240.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.41-94.8a17.31 17.31 0 0 0-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4a17.31 17.31 0 0 0 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.41-33.5 47.3 94.7a17.31 17.31 0 0 0 31 0l47.31-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3a17.33 17.33 0 0 0 .2-31.1zm-155.9 106c-49.91 49.9-131.11 49.9-181 0a128.13 128.13 0 0 1 0-181c49.9-49.9 131.1-49.9 181 0a128.13 128.13 0 0 1 0 181z"
+                                            class="fa-secondary"
+                                            ></path>
+                                            <path
+                                            fill="currentColor"
+                                            d="M352 256a96 96 0 1 1-96-96 96.15 96.15 0 0 1 96 96z"
+                                            class="fa-primary"
+                                            ></path>
+                                        </g>
+                                        </svg>   
+                                    </a>
+                                  </li>    
+                                </ul>
+                            </div>
+                            <div class="themeButton tb-nav-outside">
+                                <a href="#" class="nav-link link-text">
+                                    <svg
+                                    class="theme-icon"
+                                    id="lightIcon"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    data-prefix="fad"
+                                    data-icon="moon-stars"
+                                    role="img"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                    class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x"
+                                    >
+                                    <g class="fa-group">
+                                        <path
+                                        fill="currentColor"
+                                        d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7 149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208z"
+                                        class="fa-secondary"
+                                        ></path>
+                                        <path
+                                        fill="currentColor"
+                                        d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0 1-149 71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2 1.6 10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4 165.4 178.5 147.7z"
+                                        class="fa-primary"
+                                        ></path>
+                                    </g>
+                                    </svg>
+                                    <svg
+                                    class="theme-icon"
+                                    id="darkIcon"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    data-prefix="fad"
+                                    data-icon="sun"
+                                    role="img"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                    class="svg-inline--fa fa-sun fa-w-16 fa-7x"
+                                    >
+                                    <g class="fa-group">
+                                        <path
+                                        fill="currentColor"
+                                        d="M502.42 240.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.41-94.8a17.31 17.31 0 0 0-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4a17.31 17.31 0 0 0 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.41-33.5 47.3 94.7a17.31 17.31 0 0 0 31 0l47.31-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3a17.33 17.33 0 0 0 .2-31.1zm-155.9 106c-49.91 49.9-131.11 49.9-181 0a128.13 128.13 0 0 1 0-181c49.9-49.9 131.1-49.9 181 0a128.13 128.13 0 0 1 0 181z"
+                                        class="fa-secondary"
+                                        ></path>
+                                        <path
+                                        fill="currentColor"
+                                        d="M352 256a96 96 0 1 1-96-96 96.15 96.15 0 0 1 96 96z"
+                                        class="fa-primary"
+                                        ></path>
+                                    </g>
+                                    </svg>   
+                                </a>
+                              </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Navbar code End-->
+
+    <!-- Body Content Start-->
+    <section class="body-content-section">
+        <div class="container-fluid work-content">
+            <div class="row">
+
+                <div class="col-md-3">
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="work-link">
+                            <p>
+                                <a href="../literature.html">Literature</a> > <span class="work-active-piece"><strong>My Little Pink Eraser</strong></span>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+
+                </div>
+
+
+            </div>
+
+
+            <div class="work-spacing-block-medium">
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+
+                </div>
+
+                <div class="col-md-6 work-content-body">
+                    <div class="work-long-title">
+                        <strong>My Little Pink Eraser</strong>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+
+                </div>
+
+
+            </div>
+
+            <div class="work-spacing-block-medium">
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+
+                </div>
+
+                <div class="col-md-6 work-content-body">
+                    <div class="work-author">
+                        Lilly Chattin
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+
+                </div>
+
+
+            </div>
+
+            <div class="work-spacing-block-large">
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+
+                </div>
+
+                <div class="col-md-6 work-content-body">
+                    <div class="work-text">
+
+                        <p>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>I bite my lip and look at the clock. Two minutes left. I have to finish the test. I grab my eraser and frantically rub out my last response. Writing as quickly as I can, I finish the last question with mere seconds to spare. I sigh in relief and turn it in. When I sit down again, I start to sweep the eraser shavings off of my desk. The bright pink of my eraser catches my eye. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>I pick it up with a soft smile. This eraser has brought me through many mistakes. It’s small, but it still works. It has a hole poked through the middle from when I stabbed it with a pencil in 4th grade. I rub its smooth, soft edges. Looking at it, I can still imagine it at its full size as it was eleven years ago when I was in 1st grade. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>My mom got it for me with my school supplies that year, but I really didn’t use it all that much. It was there though. It was there as I learned my letters, and it was there when I learned cursive too. It was there when I wrote that stupid essay about pufferfish. It was there when I was struggling to do at-home schooling during the pandemic. It was there when I wrote in my diary that I got baptized, or that my dad was sick, or that I had my first crush, or even that I was unsure about my future. It was there when I cried over my pre-cal homework, and it was there when I figured it out. It was there for a long time, and I look at it now and wonder how it’s still with me. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>I lost it three times over the years, and I forgot about it entirely each time. But every time I lost it, I found it again. Now, as I rub my thumb against it, I realize it’s more valuable to me because of those losses. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>Eleven years ago, I had it in my hand when I walked into that classroom with a too-big backpack and a too-big knot of butterflies in my stomach. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>Two years later, I had it when I sat alone doodling at the playground, a pit of loneliness filling my stomach until a friendly girl asked me to play kickball with her. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>Three years after that, it was with me when I had to write all those essays about Steve Jobs. I had it during the pandemic when I wrote notes to my friends and left them on their desks during the alternating distance learning days. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>The next two years, I had it when we drew goofy drawings, when I wrote down brain sparks for that book that never went anywhere, and when we defined every single vocabulary word in that science book throughout each year. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>I had it the next summer when I finally finished writing my own novel, which I loved, but never tried to publish. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>Two years after that, I had it when I had to relearn my handwriting because the chemistry teacher wanted it perfect, when the Spanish project was due that day and I wasn’t quite finished, and when I couldn’t recall the formula for the circumference of a circle during that geometry test that I failed. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>And finally, it’s still with me now that I’m a senior. Growing up, but still young and unsure. When there are so many options and choices to make, and never any certainty when I finally decide. When I drive past our town’s university and wonder if I can really make it to something bigger. When I fill out those applications for jobs and schools, and never once know which decision is the best one. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>Every year, that eraser got a little smaller, and I got a little taller. It shrunk as I grew, and it’s a bittersweet thing that it won’t last until I’m grown. 
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>So, I sit here at my desk and my heart swells with sorrow because this small thing won’t last forever. As I’ve grown, I’ve gained some friends and lost some friends, and this is almost like that. This small thing that has been with me all this time is something I’ll have to let go of as I step into the wider world with another backpack on my back and another knot of butterflies in my stomach.  
+                            <br>
+                            <span class="desktop-indent"></span><span class="mobile-indent"></span>But this time, I won’t be holding my parents’ hands when I cross the street or standing on my tiptoes to reach the bathroom sink. I’ve grown and changed. It’s something I couldn’t have done without making mistakes, but with my little pink eraser by my side, waiting to offer itself to gentle corrections, I learned from those mistakes, and I grew into who I am today. 
+                        </p>
+                        <div class="work-spacing-block-small">
+
+                        </div>
+                        <hr>
+                        <div class="work-spacing-block-small">
+
+                        </div>
+                        <p>Lilly Chattin</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Body Content End-->
+
+    <!-- Footer Start-->
+    <section class="footer-section">
+        <div class="container">
+            <footer class="footer-bs">
+                <div class="row">
+                    <div class="col-md-4 footer-nav animated fadeInUp">
+                            <h4 class="footer-header"> — Menu — </h4>
+                            <ul class="pages">
+                                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="../art.html" class="nav-link">Art</a></li>
+                                <li class="nav-item"><a href="../literature.html" class="nav-link">Literature</a></li>
+                                <li class="nav-item"><a href="../media.html" class="nav-link">Media</a></li>
+                                <li class="nav-item"><a href="../credits.html" class="nav-link">Credits</a></li>
+                                <li class="nav-item"><a href="../about.html" class="nav-link">About Us</a></li>
+                            </ul>
+                    </div>
+                    <div class="col-md-4 footer-brand animated fadeInLeft">
+                        <a href="../index.html"><img class="footer-img" src="../img/The Magnet Logos/black transparent_magnet_logo.png"></a>
+                        <p>
+                            Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.
+                        </p>
+                    </div>
+                    <div class="col-md-4 footer-social animated fadeInDown">
+                        <h4 class="footer-header footer-social-header"> — Follow Us — </h4>
+                        <ul class="footer-social-list">
+                            <li class="nav-item"><a href="#" class="nav-link"> Facebook <i class="fa-brands fa-facebook fa-lg" id="footer-font-awesome-icon"></i> </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"> Instagram <i class="fa-brands fa-instagram fa-lg" id="footer-font-awesome-icon"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <!-- Footer End-->
+
+
+    <!-- Back to Top Button Start-->
+    <div class="progress-wrap ">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /></svg>
+    </div>
+    <!-- Back to Top Button End-->
+
+    <!-- Custom page cursor Start -->
+    <!-- Codepen link: https://codepen.io/ig_design/pen/OrLBqO  -->
+    <div class="cursor cursor-shadow"></div>
+    <div class="cursor cursor-dot"></div>
+    <!-- Custom page cursor End -->    
+
+    
+    <!-- Link to main Javascript File (script.js) Start -->
+    <script src="../script.js"></script>
+    <!-- Link to main Javascript File (script.js) End -->
+
+    <!-- Link to literature specific Javascript File (literature-script.js) Start -->
+    <script src="../literature-script.js"></script>
+    <!-- Link to literature specific Javascript File (literature-script.js) End -->
+
+    <!-- Link to theme-switch Javascript File (script.js) Start -->
+    <script src="../theme-switch.js"></script>
+    <!-- Link to theme-switch Javascript File (script.js) End -->
+
+    <!-- Link to Back to Top Button's Javascript File (script.js) Start -->
+    <script src="../back-to-top.js"></script>
+    <!-- Link to the Back to Top Button's Javascript File (script.js) End -->
+
+</body>
+</html>
