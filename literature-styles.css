@@ -469,6 +469,25 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
     padding-right: 35px;
 }
 
+
+@media (max-width: 430px) {
+  .literature-pieces {
+    padding-bottom: 3rem;
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .literature-pieces {
+    padding-bottom: 3rem;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+  }
+}
+
+
 .literature-pieces a {
   text-decoration: none;
   color: var(--font-color);
@@ -496,6 +515,8 @@ Inspired by https://www.brinkerhoffpoetry.org/poems
     font-weight: 500 !important;
     color: #ffede1;
     margin-top: 5%;
+
+    text-align: center;
 
 }
 
@@ -713,6 +734,13 @@ Start
   padding-bottom: 5rem;
 }
 
+
+@media (max-width: 768px) {
+  .work-spacing-block-large {
+    padding-bottom: 3rem;
+  }
+}
+
 .work-link {
   font-family: 'minion-pro';
   font-size: 1rem;
@@ -737,9 +765,20 @@ Start
   line-height: 1.5;
   font-family: 'minion-pro';
 
+  color: var(--dark-green-accent);
+
+}
+
+#the-golden-tree-author {
+  color: #ffd784;
+}
+
+#pink-eraser-author {
+  color: var(--pink-accent);
 }
 
 .work-text {
+  font-size: 21px;
   font-weight: 400;
   font-family: 'minion-pro';
 }
@@ -764,6 +803,24 @@ Start
   line-height: 34px;
 }
 
+.desktop-indent {
+  padding-left: 5.2rem;
+}
+
+.mobile-indent {
+  padding-left: 3rem;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-indent {
+    display: none;
+  }
+  .mobile-indent {
+    display:inline;
+  }
+}
+
 
 
 
@@ -778,6 +835,15 @@ Start
     justify-items: center;
     align-items: center;
   }
+
+  .work-short-title{
+    text-align: center;
+  }
+  
+  .work-short-author {
+    text-align:center;
+    padding-bottom: 3rem;
+  }
 }
 .work-short-title {
   font-size: 5rem;
@@ -787,13 +853,18 @@ Start
   font-family: 'minion-pro';
 }
 
+
 .work-short-author {
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.5;
   font-family: 'minion-pro';
 
+  color: var(--dark-green-accent);
+
 }
+
+
 
 .work-short-content-body {
   font-size: 16px;
@@ -810,7 +881,7 @@ Start
 .work-long-title {
   font-size: 3rem;
   line-height: 1.2;
-  font-weight: 300;
+  font-weight: 700;
   font-family: 'minion-pro';
 
   display: flex;
