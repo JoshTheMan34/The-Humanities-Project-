@@ -17,6 +17,7 @@ Start*/
   --light-green-accent: #87CDA1;
   --yellow-accent: #FDD57E;
   --pink-accent: #FFBCDF;
+  --light-purple-accent: #aabbe1;
 
 }
 
@@ -419,10 +420,16 @@ Start */
   padding-bottom: 70px;
 }
 
+/* 
+This section was deleted.
+However I still want to keep the code.
+
 .index-theme-testimonials-header {
   font-family: 'minion-pro';
   font-size: 28px;
   padding-bottom: 42px;
+
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -430,6 +437,8 @@ Start */
     text-align: center;
   }
 }
+
+*/ 
 
 .index-theme-testimonials-title {
   font-family: 'Playfair Display';
@@ -474,6 +483,9 @@ Start
   -ms-transform: rotate(-2deg);
   transform: rotate(-2deg);
   width: 480px;
+
+  font-size: 21px;
+
   font-family: 'Indie Flower', cursive;
   font-family: 'Give You Glory', cursive;
   font-family: 'The Girl Next Door', cursive;
@@ -520,11 +532,14 @@ Start
   -ms-transform: rotate(2deg);
   transform: rotate(2deg);
   width: 480px;
+
+  font-size: 1em;
+
   font-family: 'Indie Flower', cursive;
   font-family: 'Give You Glory', cursive;
   font-family: 'The Girl Next Door', cursive;
-  font-family: 'Gloria Hallelujah', cursive;  
-  font-size: 1em;
+  font-family: 'Gloria Hallelujah', cursive; 
+
 }
 .note:after {
   display: block;
@@ -812,6 +827,43 @@ End */
   .index-snippets-text {
     margin-top: 28px;
   }
+}
+
+.index-snippets-img-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+
+  padding-top: 1rem;
+
+}
+
+@media (max-width: 768px) {
+  .index-snippets-img-container {
+    padding-top: 2rem;
+  }
+}
+
+
+.index-snippets-img {
+  width: 400px;
+}
+
+.index-snippets-img-container h1 {
+  font-family: 'minion-pro';
+  font-weight: 700 !important;
+  font-size: 32px;
+
+  padding-top: 2rem;
+}
+
+.index-snippets-img-container p {
+  font-family: 'minion-pro';
+  font-size: 16px;
+  color: #777c77;
+  padding-top: 1rem;
 }
 /* Index Snippets 
 End*/

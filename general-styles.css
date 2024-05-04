@@ -13,6 +13,7 @@ Start*/
     --light-green-accent-translucent: #87cda177;
     --yellow-accent: #FDD57E;
     --pink-accent: #FFBCDF;
+    --light-purple-accent: #aabbe1;
 
     --logo-color:
 
@@ -131,7 +132,26 @@ a {
     padding-bottom: 3rem;
 }
 
-
+.text-light-green {
+    color: var(--light-green-accent);
+  }
+  
+  .text-dark-green {
+    color: var(--dark-green-accent);
+  }
+  
+  .text-light-purple {
+    color: var(--light-purple-accent);
+  }
+  
+  .text-yellow {
+    color: var(--yellow-accent);
+  }
+  
+  .text-pink {
+    color: var(--pink-accent);
+  }
+  
 
 /* Basic Body CSS for every page 
 End*/
