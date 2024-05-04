@@ -552,7 +552,19 @@ From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
 }
 
 .card {
-  background-color: #275EFE;
+  color: #275EFE;
 }
 
+h2 {
+  font-style: italic;
+  font-family: 'Playfair Display';
+}
+
+.card-title {
+  font-family: 'minion-pro';
+}
+
+.card-body {
+  background-color: #d0cfce;
+}
 /*Modal Carousel end*/
