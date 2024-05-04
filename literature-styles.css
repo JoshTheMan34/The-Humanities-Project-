@@ -85,6 +85,13 @@ End
     background-size: cover;
   }
 
+  /* Removes the parallax for mobile view*/
+  @media (max-width: 768px) {
+    .txtover {
+      background-attachment: local;
+    }
+  }
+  
   .txtover figcaption {
     position: absolute;
     top: 50%;
