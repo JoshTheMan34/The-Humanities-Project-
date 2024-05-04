@@ -17,6 +17,7 @@ Start*/
   --light-green-accent: #87CDA1;
   --yellow-accent: #FDD57E;
   --pink-accent: #FFBCDF;
+  --light-purple-accent: #aabbe1;
 
 }
 
@@ -62,7 +63,7 @@ Start */
     position: relative;
     margin: 0;
     padding: 0;
-    background-image: url(img/second-body-content-index-placeholder-jackie-dilorenzo-RyLsRzy9jIA-unsplash.jpg);
+    background-image: url(img/index-imgs/index-backgrounds/sunflower3.jpg);
     height: 50vh;
 
     background-attachment: fixed;
@@ -70,10 +71,20 @@ Start */
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  /* Removes the parallax for mobile view*/
+  @media (max-width: 768px) {
+    .txtover {
+      background-attachment: local;
+    }
+    .txtover figcaption {
+      top: 47% !important;
+    }
+  }
   
   .txtover figcaption {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -196,13 +207,8 @@ End */
 /* Sponsors Slider 
 Start */
 
-
-.sponsors-sliders {
-  align-items: center;
-  background: var(--main-background-color);
-  display: flex;
-  height: 100vh;
-  justify-content: center;
+.companies_slider {
+  background-color: var(--main-background-color);
 
   /* added by us 
   Start*/
@@ -210,25 +216,13 @@ Start */
   margin-bottom: 70px;
   /* added by us 
   End */
+
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 10));
-  }
-}
 .slider {
-  background: var(--main-background-color);
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-
 }
+
 .slider::before, .slider::after {
   background: linear-gradient(to right, var(--main-background-color) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
@@ -236,25 +230,125 @@ Start */
   position: absolute;
   width: 200px;
   z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider .slide-track {
-  animation: scroll 30s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
 
 }
-.slider .slide {
-  height: 100px;
-  width: 250px;
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: auto;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100px;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
 }
 
 /* Sponsors Slider 
@@ -326,10 +420,16 @@ Start */
   padding-bottom: 70px;
 }
 
+/* 
+This section was deleted.
+However I still want to keep the code.
+
 .index-theme-testimonials-header {
   font-family: 'minion-pro';
   font-size: 28px;
   padding-bottom: 42px;
+
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -337,6 +437,8 @@ Start */
     text-align: center;
   }
 }
+
+*/ 
 
 .index-theme-testimonials-title {
   font-family: 'Playfair Display';
@@ -381,6 +483,9 @@ Start
   -ms-transform: rotate(-2deg);
   transform: rotate(-2deg);
   width: 480px;
+
+  font-size: 21px;
+
   font-family: 'Indie Flower', cursive;
   font-family: 'Give You Glory', cursive;
   font-family: 'The Girl Next Door', cursive;
@@ -427,11 +532,14 @@ Start
   -ms-transform: rotate(2deg);
   transform: rotate(2deg);
   width: 480px;
+
+  font-size: 1em;
+
   font-family: 'Indie Flower', cursive;
   font-family: 'Give You Glory', cursive;
   font-family: 'The Girl Next Door', cursive;
-  font-family: 'Gloria Hallelujah', cursive;  
-  font-size: 1em;
+  font-family: 'Gloria Hallelujah', cursive; 
+
 }
 .note:after {
   display: block;
@@ -719,6 +827,43 @@ End */
   .index-snippets-text {
     margin-top: 28px;
   }
+}
+
+.index-snippets-img-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+
+  padding-top: 1rem;
+
+}
+
+@media (max-width: 768px) {
+  .index-snippets-img-container {
+    padding-top: 2rem;
+  }
+}
+
+
+.index-snippets-img {
+  width: 400px;
+}
+
+.index-snippets-img-container h1 {
+  font-family: 'minion-pro';
+  font-weight: 700 !important;
+  font-size: 32px;
+
+  padding-top: 2rem;
+}
+
+.index-snippets-img-container p {
+  font-family: 'minion-pro';
+  font-size: 16px;
+  color: #777c77;
+  padding-top: 1rem;
 }
 /* Index Snippets 
 End*/

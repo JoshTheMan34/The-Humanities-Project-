@@ -125,9 +125,66 @@ footer {
 
 }
 
+.intro {
+  margin: 1rem 0;
+  padding: 0;
+  width: 100%;
+}
+
+.intro-title-header {
+  color: var(--light-green-accent);
+  text-decoration: none;
+  font-size: 100px;
+  
+}
+
+.intro-title-text {
+  font-family: 'minion-pro';
+  font-weight: 400;
+  font-size: 1.4rem;
+
+  padding-top: 21px;
+
+}
+
+.col-md-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.team-container {
+  padding-top: 5rem;
+}
+
 #teamlinks {
-  background-color: var(--dark-green-accent) !important;
-  color: #fff;
+  color: var(--light-green-accent);
+  text-decoration: none;
+
+  font-size: 50px;
+}
+
+.col-md-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-team-img {
+  width: 1032px;
+  height: 516px;
+}
+
+@media (max-width: 768px) {
+
+
+  .about-team-img {
+    width: 90vw;
+    height: auto;
+    object-fit: contain;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Roboto:400,700');
@@ -211,12 +268,6 @@ ul {
   li {
     margin: 0 1.5rem 0 0;
   }
-}
-
-.intro {
-  margin: 1rem 0;
-  padding: 0;
-  width: 100%;
 }
 
 nav {

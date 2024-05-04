@@ -18,6 +18,7 @@ Start
 --light-green-accent-translucent: #87cda177;
 --yellow-accent: #FDD57E;
 --pink-accent: #FFBCDF;
+--light-purple-accent: #aabbe1;
 
 --logo-color:
 
@@ -228,7 +229,7 @@ Start */
 }
 
 .credit-content-left-desc {
-    border-right: 3px solid var(--light-green-accent);
+    border-right: 3px solid var(--light-purple-accent);
 
     display: flex;
     justify-content: left;
@@ -242,7 +243,7 @@ Start */
     font-weight: 300;
     font-family: 'Playfair Display';
   
-    border-right: 3px solid var(--light-green-accent);
+    border-right: 3px solid var(--light-purple-accent);
 
     display: flex;
     justify-content: left;
@@ -256,8 +257,14 @@ Start */
     align-items: center;
     text-align: right;
 }
-
+@media ((max-width: 768px)) {
+  .credit-content-right-desc {
+    padding-top: 3rem;
+  }
+}
 .credit-content-desc-text {
+    list-style-type: none;
+
     padding-top: 21px;
     padding-bottom: 21px;
 
@@ -270,6 +277,27 @@ Start */
     text-decoration: none;
     color: var(--font-color);
 }
+
+.credit-content-text-light-green {
+  color: var(--light-green-accent);
+}
+
+.credit-content-text-dark-green {
+  color: var(--dark-green-accent);
+}
+
+.credit-content-text-light-purple {
+  color: var(--light-purple-accent);
+}
+
+.credit-content-text-yellow {
+  color: var(--yellow-accent);
+}
+
+.credit-content-text-pink {
+  color: var(--pink-accent);
+}
+
 
 @media (max-width: 768px) {
   .credit-content-left-header {
@@ -308,7 +336,7 @@ Start */
   font-family: 'minion-pro';
   font-size: 21px !important;
 
-  text-decoration: underline wavy var(--light-green-accent);
+  text-decoration: underline wavy var(--light-purple-accent);
   text-underline-offset: 21px;
 
 
@@ -324,6 +352,7 @@ Start */
   }
   .credits-final-message-section {
     padding-top: 10px;
+    padding-bottom: 21px;
   }
   .credits-final-message {
     align-items: center;
