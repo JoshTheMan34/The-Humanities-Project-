@@ -520,19 +520,20 @@ From Codepen: https://codepen.io/AustinAuth/pen/xxmbZX?editors=1100
 
 /*Modal Carousel beginning*/
 
-.img-size {
+img {
   /* 	padding: 0;
       margin: 0; */
-  height: 450px;
-  width: 700px;
+  height: 80vh;
   background-size: cover;
   overflow: hidden;
-}
+  width: fit-content;
+} 
 
 .modal-content {
   width: 500px;
   height: auto;
   border: none;
+  
 }
 
 .modal-body {
